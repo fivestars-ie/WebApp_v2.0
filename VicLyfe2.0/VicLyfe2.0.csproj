@@ -147,6 +147,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\FindYourRegionController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InformationHubController.cs" />
     <Compile Include="Global.asax.cs">
@@ -199,6 +200,7 @@
     <Content Include="Views\InformationHub\ViewPage1.cshtml" />
     <Content Include="Views\InformationHub\ViewPage2.cshtml" />
     <Content Include="Views\InformationHub\ViewPage3.cshtml" />
+    <Content Include="Views\FindYourRegion\FYR.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
