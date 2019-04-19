@@ -18,6 +18,13 @@
             <asp:TextBox ID="TextBox2" runat="server" Height="232px" Width="581px"></asp:TextBox>
         </asp:Panel>
         
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <asp:DropDownList ID="DropDownList1" runat="server">
+        </asp:DropDownList>
+        
     </form>
 </body>
 </html>

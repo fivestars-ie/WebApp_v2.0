@@ -8,6 +8,7 @@ namespace VicLyfe2._0.Controllers
 {
     public class FindYourRegionController : Controller
     {
+
         // GET: FindYourRegion
         public ActionResult FYR()
         {
@@ -38,5 +39,10 @@ namespace VicLyfe2._0.Controllers
         {
             return View();
         }
+        public ActionResult FormPage()
+        {
+            return View();
+        }
+
     }
 }

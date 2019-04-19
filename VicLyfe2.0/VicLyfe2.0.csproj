@@ -153,6 +153,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\test.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebForm1.aspx.cs">
@@ -215,6 +216,7 @@
     <Content Include="Views\FindYourRegion\C_View.cshtml" />
     <Content Include="Views\FindYourRegion\D_View.cshtml" />
     <Content Include="Views\FindYourRegion\E_View.cshtml" />
+    <Content Include="Views\FindYourRegion\FormPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
