@@ -13,5 +13,30 @@ namespace VicLyfe2._0.Controllers
         {
             return View();
         }
+
+        public ActionResult A_View()
+        {
+            return View();
+        }
+
+        public ActionResult B_View()
+        {
+            return View();
+        }
+
+        public ActionResult C_View()
+        {
+            return View();
+        }
+
+        public ActionResult D_View()
+        {
+            return View();
+        }
+
+        public ActionResult E_View()
+        {
+            return View();
+        }
     }
 }
