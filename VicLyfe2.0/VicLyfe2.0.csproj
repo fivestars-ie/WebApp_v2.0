@@ -45,10 +45,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -153,8 +161,35 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Age.cs" />
+    <Compile Include="Models\Aggregate.cs" />
+    <Compile Include="Models\Australian_experience.cs" />
+    <Compile Include="Models\Australian_study.cs" />
+    <Compile Include="Models\College.cs" />
+    <Compile Include="Models\College_count.cs" />
+    <Compile Include="Models\Designated_Language.cs" />
+    <Compile Include="Models\Doctrate.cs" />
+    <Compile Include="Models\Hospital.cs" />
+    <Compile Include="Models\Hospital_count.cs" />
+    <Compile Include="Models\Job.cs" />
+    <Compile Include="Models\Job_type.cs" />
+    <Compile Include="Models\Language_skills.cs" />
+    <Compile Include="Models\Model1.cs" />
+    <Compile Include="Models\Overseas_experience.cs" />
+    <Compile Include="Models\Park.cs" />
+    <Compile Include="Models\Park_count.cs" />
+    <Compile Include="Models\Partner_level.cs" />
+    <Compile Include="Models\Points_Calculator.cs" />
+    <Compile Include="Models\Preference_Rating.cs" />
+    <Compile Include="Models\Qualification_skills.cs" />
+    <Compile Include="Models\Region.cs" />
+    <Compile Include="Models\Rent.cs" />
+    <Compile Include="Models\Selected_region.cs" />
+    <Compile Include="Models\Suburb.cs" />
     <Compile Include="Models\test.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
+    <Compile Include="Models\Unit_type.cs" />
+    <Compile Include="Models\User_preference.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
@@ -217,6 +252,11 @@
     <Content Include="Views\FindYourRegion\D_View.cshtml" />
     <Content Include="Views\FindYourRegion\E_View.cshtml" />
     <Content Include="Views\FindYourRegion\FormPage.cshtml" />
+    <Content Include="Views\Aggregates\Create.cshtml" />
+    <Content Include="Views\Aggregates\Delete.cshtml" />
+    <Content Include="Views\Aggregates\Details.cshtml" />
+    <Content Include="Views\Aggregates\Edit.cshtml" />
+    <Content Include="Views\Aggregates\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
