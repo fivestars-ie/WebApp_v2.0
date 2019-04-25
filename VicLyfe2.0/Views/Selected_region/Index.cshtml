@@ -1,0 +1,11 @@
+﻿@model IEnumerable<VicLyfe2._0.Models.Selected_region>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Message</h2>
+<h2>@ViewBag.region</h2>
+
+<p style="font-weight:bold;">@Html.ActionLink("Select Suburb", "Create", "User_preference")</p>

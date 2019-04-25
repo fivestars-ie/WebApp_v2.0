@@ -1,0 +1,78 @@
+﻿@model IEnumerable<VicLyfe2._0.Models.Points_Calculator>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Age.Age_group)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Australian_experience.Australian_work_experience)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Australian_study.Australian_study_requirement)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Designated_Language.Designated_Language_Service)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Doctrate.Doctrate_or_research_qualification)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Language_skills.Language_proficiency)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Overseas_experience.Overseas_work_experience)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Partner_level.Partner_skills)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Qualification_skills.Qualification)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Age.Age_group)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Australian_experience.Australian_work_experience)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Australian_study.Australian_study_requirement)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Designated_Language.Designated_Language_Service)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Doctrate.Doctrate_or_research_qualification)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Language_skills.Language_proficiency)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Overseas_experience.Overseas_work_experience)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Partner_level.Partner_skills)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Qualification_skills.Qualification)
+        </td>
+        
+    </tr>
+}
+
+</table>

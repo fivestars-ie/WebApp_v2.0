@@ -1,0 +1,107 @@
+﻿@model VicLyfe2._0.Models.Points_Calculator
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create</h2>
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Points_Calculator</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Age_group, "Age_group", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Age_group", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Age_group, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Language_proficiency, "Language_proficiency", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Language_proficiency", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Language_proficiency, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Australian_study_requirement, "Australian_study_requirement", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Australian_study_requirement", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Australian_study_requirement, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Qualification, "Qualification", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Qualification", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Qualification, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Doctrate_or_Master_by_research, "Doctrate_or_Master_by_research", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Doctrate_or_Master_by_research", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Doctrate_or_Master_by_research, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Overseas_work_experience, "Overseas_work_experience", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Overseas_work_experience", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Overseas_work_experience, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Australian_work_experience, "Australian_work_experience", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Australian_work_experience", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Australian_work_experience, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Partner_skills, "Partner_skills", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Partner_skills", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Partner_skills, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Designated_language_skills, "Designated_language_skills", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Designated_language_skills", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Designated_language_skills, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
