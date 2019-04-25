@@ -23,8 +23,6 @@ namespace VicLyfe2._0.Controllers
             return View();
         }
 
-        
-
         // GET: User_preference/Create
         public ActionResult Create()
         {
