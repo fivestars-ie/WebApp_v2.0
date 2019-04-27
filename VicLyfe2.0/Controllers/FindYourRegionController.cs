@@ -39,10 +39,6 @@ namespace VicLyfe2._0.Controllers
         {
             return View();
         }
-        public ActionResult FormPage()
-        {
-            return View();
-        }
 
     }
 }

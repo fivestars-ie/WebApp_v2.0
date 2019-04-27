@@ -2,8 +2,138 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+
+
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Oswald"
+    }
+
+    body {
+        font-family: "Open Sans"
+    }
+</style>
+<html>
+<body class="w3-light-grey">
+
+
+    <!-- w3-content defines a container for fixed size centered content,
+    and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="w3-content" style="max-width:1600px">
+
+        <!-- Header -->
+        <header class="w3-container w3-center w3-padding-48 w3-white">
+            <h1 class="w3-xxxlarge"><b>VicLyfe - A new beginning</b></h1>
+            <h6>Regional Victoria <span class="w3-tag">The place to be</span></h6>
+        </header>
+
+        <!-- Image header -->
+        <header class="w3-display-container w3-wide" id="home">
+            <img class="w3-image" src="~/Content/DSC_6931.jpg" alt="Fashion Blog" width="1600" height="1060">
+            <div class="w3-display-left w3-padding-large">
+                <h1 class="w3-text-black">VicLyfe, For Graduates</h1>
+                <h1 class="w3-jumbo w3-text-black w3-hide-small"><b>Moving to Regional Victoria</b></h1>
+                <h6>
+                    <button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off">
+                        <ul>
+                            <li background-color="grey">@Html.ActionLink("Know More", "About", "Home")</li>
+                        </ul>
+                    </button>
+                </h6>
+            </div>
+        </header>
+        <div class="w3-container" style="padding:32px 16px" id="about">
+            <p class="responsive" style="text-align:center; margin-top:10px;margin-bottom:20px;">
+                Today’s world is smaller than it has ever been. Places that once seemed too far away to ever imagine travelling
+                there now feel within reach, offering new and exciting opportunities to begin life afresh.
+                And so it is for the many thousands of people who come from lands afar to make Australia their new home.
+                Regional Victoria is hugely active in attracting and supporting migrants in setting up their new lives. From help
+                with the many visa options available, to the provision of useful resources such as those linked below, regional cities
+                and shires offer invaluable assistance to make the process of moving
+                into their region from overseas as smooth and successful as possible.
+            </p>
+
+            <div class="w3-container" style="padding:64px 16px" id="about">
+                <h3 class="w3-center">What Regional Victoria Offers for you ?</h3>
+                <p class="w3-center w3-large">A Never ending satisfaction just a few minutes away from you.</p>
+                <div class="w3-row-padding w3-center" style="margin-top:50px">
+                    <div class="w3-quarter">
+                        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+                        <p class="w3-large">Jobs</p>
+                        <p>
+                            One of the biggest concerns of anyone planning to move is that of employment. You are not alone here ! We have
+                            plenty of resources to offer.
+                        </p>
+                    </div>
+                    <div class="w3-quarter">
+                        <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+                        <p class="w3-large">Cost and Quality of Living</p>
+                        <p>
+                            Enjor superior quality of life with affordable cost of housing and other facilities. Do not pay more when you
+                            can enjoy the same benefits at a much reasonable price.
+                        </p>
+                    </div>
+                    <div class="w3-quarter">
+                        <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+                        <p class="w3-large">Hospitals</p>
+                        <p>
+                            Equal number of Health care centers are in Regional Victoria to. You do not have to worry about not having access
+                            to emergency health services. Explore Hospitals around you in a click !
+                        </p>
+                    </div>
+                    <div class="w3-quarter">
+                        <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+                        <p class="w3-large">Safety and Security</p>
+                        <p>
+                            A wonderful place to live and build your career with very low crime rate and stress free life. Do not have to worry
+                            about any emergency incidents. Victorian Police Services are always with you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        <!-- Footer -->
+        <footer class="w3-center w3-black w3-padding-64">
+            <ul>
+                <li background-color="grey">@Html.ActionLink("Go Back to the Top", "Index", "Home")</li>
+            </ul>
+            <div class="w3-xlarge w3-section">
+                <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                <i class="fa fa-instagram w3-hover-opacity"></i>
+                <i class="fa fa-snapchat w3-hover-opacity"></i>
+                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                <i class="fa fa-twitter w3-hover-opacity"></i>
+                <i class="fa fa-linkedin w3-hover-opacity"></i>
+            </div>
+        </footer>
+
+
+
+        <script>
+            // Toggle between hiding and showing blog replies/comments
+            document.getElementById("myBtn").click();
+            function myFunction(id) {
+                var x = document.getElementById(id);
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+
+            function likeFunction(x) {
+                x.style.fontWeight = "bold";
+                x.innerHTML = "✓ Liked";
+            }
+        </script>
+
+</body>
+</html>
+
+

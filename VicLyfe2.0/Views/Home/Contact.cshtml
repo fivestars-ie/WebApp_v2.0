@@ -1,17 +1,101 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<div style="position: fixed">
+    <b>&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</b>
+    <b style="TEXT-DECORATION: overline; color:red;">*&emsp;&emsp;&emsp;*</b>
+</div>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<html>
+<body>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+    <!-- Top menu -->
+    <div class="img-responsive">
+        <h3 style="text-align:center; color:grey;"> <b> Still Confused ?</b> </h3>
+        <h4 style="text-align:center; color:grey;"> See the resources you can consider for help</h4>
+    </div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+        <!-- First Photo Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+            <div class="w3-quarter">
+                <img src="~/Content/Jobs-link.jpg" alt="Jobs" style="width:100%">
+                <h3>Make a move only when your ready.</h3>
+                <p>Find out more about jobs in Regional Victoria</p>
+                <p><a href="https://regionalliving.vic.gov.au/why-regional-victoria/jobs" target="_blank">Click Here</a></p>
+            </div>
+            <div class="w3-quarter">
+                <img src="~/Content/Hospital.png" alt="Hospital" style="width:100%">
+                <h3>Have health conditions ?</h3>
+                <p>Make sure you know about Regional Health Services and Benefits.</p>
+                <p><a href="https://regionalliving.vic.gov.au/why-regional-victoria/health" target="_blank">Click Here</a></p>
+            </div>
+            <div class="w3-quarter">
+                <img src="~/Content/cost-of-living.jpg" alt="Cost" style="width:100%">
+                <h3>Can I afford my living in Regiona Victoria?</h3>
+                <p>Fine out here.</p>
+                <p><a href="https://emsaus.com/blog/cost-living-regional-areas/" target="_blank">Click Here</a></p>
+
+            </div>
+            <div class="w3-quarter">
+                <img src="~/Content/PR.jpg" alt="PR" style="width:100%">
+                <h3>Still not sure of the PR benefits?</h3>
+                <p>Look for some of the best migration agents here.</p>
+                <p><a href="https://liveinmelbourne.vic.gov.au/connect/employer-visas-and-visa-nomination/regional-sponsored-migration-scheme" target="_blank">Click Here</a></p>
+
+            </div>
+        </div>
+
+        <hr id="about">
+
+        <!-- About Section -->
+        <div class="w3-container w3-padding-32 w3-center">
+            <h3>Make your move when you when your ready.</h3><br>
+            <img src="~/Content/20151118_regionalvictoria.png" alt="Victoria" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+            <div class="w3-padding-32">
+                <h4><b>A beautiful awaits for you here.</b></h4>
+                <h6><i>Life filled with happiness and passion</i></h6>
+                <p>
+                    Victorian government offers a range of services and benefits for people moving to Regional
+                    Victoria. Perform a detailed analysis by yourself though our application as well as outisde
+                    sources and move confidently. Wishing you good Luck !
+                </p>
+            </div>
+        </div>
+        <hr>
+        <footer class="w3-center w3-black w3-padding-64">
+            <ul>
+                <li background-color="grey">@Html.ActionLink("Go Back to Home Page", "Index", "Home")</li>
+            </ul>
+            <div class="w3-xlarge w3-section">
+                <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                <i class="fa fa-instagram w3-hover-opacity"></i>
+                <i class="fa fa-snapchat w3-hover-opacity"></i>
+                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                <i class="fa fa-twitter w3-hover-opacity"></i>
+                <i class="fa fa-linkedin w3-hover-opacity"></i>
+            </div>
+        </footer>
+
+        <!-- End page content -->
+    </div>
+
+    <script>
+            // Script to open and close sidebar
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+            }
+    </script>
+
+</body>
+</html>

@@ -256,7 +256,6 @@
     <Content Include="Views\FindYourRegion\C_View.cshtml" />
     <Content Include="Views\FindYourRegion\D_View.cshtml" />
     <Content Include="Views\FindYourRegion\E_View.cshtml" />
-    <Content Include="Views\FindYourRegion\FormPage.cshtml" />
     <Content Include="Views\Aggregates\Index.cshtml" />
     <Content Include="Views\Points_Calculator\Create.cshtml" />
     <Content Include="Views\Points_Calculator\Index.cshtml" />
@@ -268,6 +267,7 @@
     <Content Include="Views\Regions\Index.cshtml" />
     <Content Include="Views\Selected_region\Create.cshtml" />
     <Content Include="Views\Selected_region\Index.cshtml" />
+    <Content Include="Views\Home\PRPath.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
