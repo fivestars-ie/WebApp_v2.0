@@ -4,8 +4,9 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<h4><b>You have Selected the Region shown below. Reiew once before proceeding further</b></h4>
+<br/>
+<h4><b>@ViewBag.region</b></h4>
 
-<h2>@ViewBag.Message</h2>
-<h2>@ViewBag.region</h2>
-
-<p style="font-weight:bold;">@Html.ActionLink("Select Suburb", "Create", "User_preference")</p>
+<button style="background-color:darkgray;">@Html.ActionLink("Select Suburb Preferences", "Create", "User_preference")</button>
+<button style="background-color:darkgray;">@Html.ActionLink("Want to Select a different Region.", "Create", "Selected_region")</button>

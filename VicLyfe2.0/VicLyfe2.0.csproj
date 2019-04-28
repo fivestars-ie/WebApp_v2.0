@@ -214,6 +214,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\canada-immigartion-new-plan-2019.png" />
     <Content Include="Content\City-1.png" />
     <Content Include="Content\City10.png" />
     <Content Include="Content\City2.png" />
@@ -234,6 +235,7 @@
     <Content Include="Content\imagesY9DPTHX2.jpg" />
     <Content Include="Content\Jobs-link.jpg" />
     <Content Include="Content\map-of-victoria-australia-s-guide-and-gippsland.jpg" />
+    <Content Include="Content\PR-points.png" />
     <Content Include="Content\PR.jpg" />
     <Content Include="Content\R1.png" />
     <Content Include="Content\R2.png" />
@@ -292,7 +294,6 @@
     <Content Include="Views\FindYourRegion\E_View.cshtml" />
     <Content Include="Views\Aggregates\Index.cshtml" />
     <Content Include="Views\Points_Calculator\Create.cshtml" />
-    <Content Include="Views\Points_Calculator\Index.cshtml" />
     <Content Include="Views\Points_Calculator\Above80.cshtml" />
     <Content Include="Views\Points_Calculator\Below80.cshtml" />
     <Content Include="Views\User_preference\Create.cshtml" />

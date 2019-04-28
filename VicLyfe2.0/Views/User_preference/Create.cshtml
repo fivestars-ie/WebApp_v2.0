@@ -4,95 +4,111 @@
     ViewBag.Title = "Create";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<body>
+<h2>Select/Enter your Affordable Rent, rate the characteristics based on your requirements.</h2>
+<style>
+    .form-horizontal{
+        box-sizing: border-box;
+    }
+    .form-group {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+        background-color:lightblue;
+    }
+</style>
 
-<h2>Create</h2>
-
-
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
-    <div class="form-horizontal">
-        <h4>User_preference</h4>
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.Expected_Weekly_Rent, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Expected_Weekly_Rent, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Expected_Weekly_Rent, "", new { @class = "text-danger" })
-            </div>
-        </div>
+<div class="form-horizontal">
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.Number_of_bedrooms, "Number_of_bedrooms", htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.DropDownList("Number_of_bedrooms", null, htmlAttributes: new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.Number_of_bedrooms, "", new { @class = "text-danger" })
-            </div>
-        </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.Job_field_1, "Job_field_1", htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.DropDownList("Job_field_1", null, htmlAttributes: new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.Job_field_1, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.Job_field_2, "Job_field_2", htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.DropDownList("Job_field_2", null, htmlAttributes: new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.Job_field_2, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.Job_Requirement, "Job_Requirement", htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.DropDownList("Job_Requirement", null, htmlAttributes: new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.Job_Requirement, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.Hospital_Service_Requirement, "Hospital_Service_Requirement", htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.DropDownList("Hospital_Service_Requirement", null, htmlAttributes: new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.Hospital_Service_Requirement, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.Do_you_prefer_Parks_and_Reserves, "Do_you_prefer_Parks_and_Reserves", htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.DropDownList("Do_you_prefer_Parks_and_Reserves", null, htmlAttributes: new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.Do_you_prefer_Parks_and_Reserves, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.Educational_Institutes_Requirement, "Educational_Institutes_Requirement", htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.DropDownList("Educational_Institutes_Requirement", null, htmlAttributes: new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.Educational_Institutes_Requirement, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
-            </div>
+    <div class="form-group">
+        <p>The average weekly Rent per person for 1bhk unit is around 125AUD. Enter the Rent accoridng to requirement and convinience.</p>
+        @Html.LabelFor(model => model.Expected_Weekly_Rent, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Expected_Weekly_Rent, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Expected_Weekly_Rent, "", new { @class = "text-danger" })
         </div>
     </div>
+
+    <div class="form-group">
+        <p>How many bedrooms do you need ?</p>
+        @Html.LabelFor(model => model.Number_of_bedrooms, "Number_of_bedrooms", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("Number_of_bedrooms", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Number_of_bedrooms, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <p> Still in the Hunt for jobs? Rate your job requirement so that we can provide a suburb with higher job oppurtunity.</p>
+        @Html.LabelFor(model => model.Job_Requirement, "Job_Requirement", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("Job_Requirement", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Job_Requirement, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <p> Select the job field if your in search of a job so that we can suggest suburbs with more number of jobs.</p>
+        @Html.LabelFor(model => model.Job_field_1, "Job_field_1", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("Job_field_1", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Job_field_1, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Job_field_2, "Job_field_2", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("Job_field_2", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Job_field_2, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <p> Need Health services often? Rate your requirement to get a suburb with more number of hospitals.</p>
+        @Html.LabelFor(model => model.Hospital_Service_Requirement, "Hospital_Service_Requirement", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("Hospital_Service_Requirement", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Hospital_Service_Requirement, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <p> Need a Park & Reserves friendly suburb? Rate your requirement to get a suburb with more number of parks and grounds.</p>
+        @Html.LabelFor(model => model.Do_you_prefer_Parks_and_Reserves, "Do_you_prefer_Parks_and_Reserves", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("Do_you_prefer_Parks_and_Reserves", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Do_you_prefer_Parks_and_Reserves, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <p> Rate your requirement to get a suburb with more number of colleges.</p>
+        @Html.LabelFor(model => model.Educational_Institutes_Requirement, "Educational_Institutes_Requirement", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("Educational_Institutes_Requirement", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Educational_Institutes_Requirement, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Show Suburbs" class="btn btn-default" />
+        </div>
+    </div>
+</div>
 }
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
+</body>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
