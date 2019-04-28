@@ -303,6 +303,7 @@
     <Content Include="Views\Selected_region\Create.cshtml" />
     <Content Include="Views\Selected_region\Index.cshtml" />
     <Content Include="Views\Home\PRPath.cshtml" />
+    <Content Include="Views\User_preference\Report.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

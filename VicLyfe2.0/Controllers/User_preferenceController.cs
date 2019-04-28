@@ -15,6 +15,13 @@ namespace VicLyfe2._0.Controllers
         private Model1 db = new Model1();
 
         // GET: User_preference
+
+        public ActionResult Report()
+        {
+            return View();
+        }
+
+
         public ActionResult Index()
         {
             ViewBag.Suburb1 = Session["Suburb1"];
