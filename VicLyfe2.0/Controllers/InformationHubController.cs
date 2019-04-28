@@ -22,14 +22,14 @@ namespace VicLyfe2._0.Controllers
 
         public ActionResult ViewPage2()
         {
-            ViewBag.Message = "Comparison of different Regional Areas in Victoria in terms of Crime, Jobs and Rent";
+            ViewBag.Message = "View comparison of different Regional Areas in Victoria in terms of Crime, Jobs and Rent";
 
             return View();
         }
 
         public ActionResult ViewPage3()
         {
-            ViewBag.Message = "Select and view data about your City!";
+            ViewBag.Message = "Select and view data about the 10 city!";
 
             return View();
         }
