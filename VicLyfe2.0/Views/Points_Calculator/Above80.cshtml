@@ -3,168 +3,170 @@
     ViewBag.Title = "Above80";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<h3>Total Points you have got is :</h3>
-<h3>@ViewBag.points</h3>
-<!-- About/Information menu -->
-<div class="w3-col l4" style="border:solid;">
-    <!-- About Card -->
-    <div class="w3-white w3-margin">
-        <img src="~/Content/PR-points.png" alt="Jane" style="width:800px;height:400px;" class="w3-grayscale">
-        <div class="w3-container w3-black">
-            <h4><b>In 2019,</b></h4>
-            <p><b>
-                Even though you have more than 75-80 points it is definitely not enough as the number of applicants are increasing
-                day by day. See the target as planned by Government of Australia.
-                </b>
-            </p>
-            <img src="~/Content/canada-immigartion-new-plan-2019.png" alt="Jane" style="width:600px;height:400px;" class="w3-grayscale">
-            <h3><b>
-                So the solution you have is to go to Regional Victoria which offers a great quality of life as well as supports
-                your immigrations needs and requirements.
-                </b>
-            </h3>
-        </div>
+    <div class=" col-md-12" style="border:solid;">
+        <h3 style="color:red;">Total Points you have got is :</h3>
+        <h3 style="color:red;">@ViewBag.points</h3>
     </div>
-</div>
-<style>
-
-    .headVisa {
-        margin-top: 50px;
-        text-transform: uppercase;
-        font-size: 20px;
-        font-weight: bold;
-    }
-
-    .infoHead {
-        text-transform: uppercase;
-        font-size: 15px;
-        font-weight: bold;
-        margin-bottom: 15px;
-    }
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 10px;
-        padding: 10px;
-        text-align: left;
-    }
-
-        .grid-container > div {
-            font-size: 15px;
-        }
-
-    .grid-left {
-        text-transform: uppercase;
-        background-color: lightgrey;
-        padding: 5px 5px;
-        padding-left: 10px;
-    }
-
-    .grid-right {
-        padding: 5px 5px;
-        padding-left: 10px;
-        border: 1px solid lightgrey;
-    }
-
-    .two-column {
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-</style>
-
-<div style="position: fixed">
-    <b style="position: fixed;">&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</b>
-    <b style="position: fixed;">*&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;*</b>
-</div>
-
-<h3><b>Permanent Visa Path</b></h3>
-<div style="font-size:15px;">
-    There are ways to get have a Permanent Visa in Australia.
-    The most mainstream path among them are :
-</div>
-<ul style="list-style-type: circle;">
-    <li>Family-stream permanent visa</li>
-    <li>Work-stream permanent visa</li>
-    <li>Investor-stream permanent visa</li>
-</ul>
-
-
-<div style="font-style:italic;font-weight:bolder">
-    As advocated by the government, the permanent visa seekers are pushed to live and take the regional path. This is due to population booming in the metropolitan area such as Melbourne.
-</div>
-
-
-
-<div class="headVisa"> The Skilled Regional (Provisional) visa (subclass 489) </div>
-<div class="infoHead">skilled workers to live and work in specified regional areas in Australia for up to four years</div>
-<div>
-    The Victorian Government offers visa nomination under the Skilled Regional (Provisional) visa (subclass 489) for highly skilled and eligible professionals and tradespeople who want to live and work in regional Victoria.
-
-</div>
-<div class="headVisa">Eligibility</div>
-<div class="grid-container">
-    <div class="grid-left">Age</div>
-    <div class="grid-right"> Below age 45</div>
-    <div class="grid-left">English language</div>
-    <div class="grid-right">
-        <div>International English Language Testing System (IELTS) score of at least six in each band score.</div>
-        <div>See <a target="_blank" href="https://liveinmelbourne.vic.gov.au/migrate/visa-nomination-occupation-lists">Nomination Occupation Lists</a> </div>
-    </div>
-    <div class="grid-left">Occupation</div>
-    <div class="grid-right">
-        <div>A current job offer in your nominated occupation within a regional area of Victoria</div>
-        <div>For list of regional area see <a target="_blank" href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-regional-provisional-489/regional-postcodes">Regional Victoria areas (including postcodes)</a></div>
-
-    </div>
-    <div class="grid-left">Work experience</div>
-    <div class="grid-right">
-        <div>Work experience in your nominated occupation must be post qualification.</div>
-        <div>Check the <a href="https://liveinmelbourne.vic.gov.au/migrate/visa-nomination-occupation-lists" target="_blank">Nomination Occupation Lists</a> </div>
-    </div>
-    <div class="grid-left">Finances</div>
-    <div class="grid-right">
-        <div style="background-color:lightgray; font-weight:bold;border:1px solid black;margin-top: 10px;">ONSHORE APPLICANTS</divstyle="font-weight:bold;border:1px> </div>
-        <div class="two-column">
-
-            <div>Working in nominated occupation </div>
-            <div>A$20,000 </div>
-        </div>
-        <div style="background-color:lightgray;font-weight:bold;border:1px solid black;margin-top: 10px;">OFFSHORE APPLICANTS</div>
-        <div class="two-column">
-
-            <div style="font-weight:bold;background-color:lightgrey;">
-                Number of dependents
+        <!-- About/Information menu -->
+        <div class="w3-col col-md-12" style="border:solid;">
+            <!-- About Card -->
+            <div class="w3-white w3-margin">
+                <img src="~/Content/PR-points.png" alt="Jane" class="w3-grayscale">
+                <div class="w3-container w3-black">
+                    <h4><b>In 2019,</b></h4>
+                    <p>
+                        <b>
+                            Even though you have more than 75-80 points it is definitely not enough as the number of applicants are increasing
+                            day by day. See the target as planned by Government of Australia.
+                        </b>
+                    </p>
+                    <img src="~/Content/canada-immigartion-new-plan-2019.png" alt="Jane" class="w3-grayscale">
+                    <h3>
+                        <b>
+                            So the solution you have is to go to Regional Victoria which offers a great quality of life as well as supports
+                            your immigrations needs and requirements.
+                        </b>
+                    </h3>
+                </div>
             </div>
-            <div style="font-weight:bold;background-color:lightgrey;">
-                Individual applicant
+        </div>
+        <style>
+
+            .headVisa {
+                margin-top: 50px;
+                text-transform: uppercase;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .infoHead {
+                text-transform: uppercase;
+                font-size: 15px;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-gap: 10px;
+                padding: 10px;
+                text-align: left;
+            }
+
+                .grid-container > div {
+                    font-size: 15px;
+                }
+
+            .grid-left {
+                text-transform: uppercase;
+                background-color: lightgrey;
+                padding: 5px 5px;
+                padding-left: 10px;
+            }
+
+            .grid-right {
+                padding: 5px 5px;
+                padding-left: 10px;
+                border: 1px solid lightgrey;
+            }
+
+            .two-column {
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+        </style>
+
+        
+
+        <br/>
+        <br/>
+        <h3><b>Permanent Visa Path</b></h3>
+        <div style="font-size:15px;">
+            There are ways to get have a Permanent Visa in Australia.
+            The most mainstream path among them are :
+        </div>
+        <ul style="list-style-type: circle;">
+            <li>Family-stream permanent visa</li>
+            <li>Work-stream permanent visa</li>
+            <li>Investor-stream permanent visa</li>
+        </ul>
+
+
+        <div style="font-style:italic;font-weight:bolder">
+            As advocated by the government, the permanent visa seekers are pushed to live and take the regional path. This is due to population booming in the metropolitan area such as Melbourne.
+        </div>
+
+
+
+        <div class="headVisa"> The Skilled Regional (Provisional) visa (subclass 489) </div>
+        <div class="infoHead">skilled workers to live and work in specified regional areas in Australia for up to four years</div>
+        <div>
+            The Victorian Government offers visa nomination under the Skilled Regional (Provisional) visa (subclass 489) for highly skilled and eligible professionals and tradespeople who want to live and work in regional Victoria.
+
+        </div>
+        <div class="headVisa">Eligibility</div>
+        <div class="grid-container">
+            <div class="grid-left">Age</div>
+            <div class="grid-right"> Below age 45</div>
+            <div class="grid-left">English language</div>
+            <div class="grid-right">
+                <div>International English Language Testing System (IELTS) score of at least six in each band score.</div>
+                <div>See <a target="_blank" href="https://liveinmelbourne.vic.gov.au/migrate/visa-nomination-occupation-lists">Nomination Occupation Lists</a> </div>
             </div>
-            <div>$30,000</div>
-            <div>1</div>
-            <div>$35,000</div>
-            <div>2</div>
-            <div>$40,000</div>
-            <div>3</div>
-            <div>$50,000</div>
-            <div>4</div>
-            <div>$60,000</div>
-            <div>5</div>
-            <div>$70,000</div>
-            <div>6 or more</div>
-            <div>$80,000</div>
+            <div class="grid-left">Occupation</div>
+            <div class="grid-right">
+                <div>A current job offer in your nominated occupation within a regional area of Victoria</div>
+                <div>For list of regional area see <a target="_blank" href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-regional-provisional-489/regional-postcodes">Regional Victoria areas (including postcodes)</a></div>
+
+            </div>
+            <div class="grid-left">Work experience</div>
+            <div class="grid-right">
+                <div>Work experience in your nominated occupation must be post qualification.</div>
+                <div>Check the <a href="https://liveinmelbourne.vic.gov.au/migrate/visa-nomination-occupation-lists" target="_blank">Nomination Occupation Lists</a> </div>
+            </div>
+            <div class="grid-left">Finances</div>
+            <div class="grid-right">
+                <div style="background-color:lightgray; font-weight:bold;border:1px solid black;margin-top: 10px;">ONSHORE APPLICANTS</divstyle="font-weight:bold;border:1px> </div>
+                <div class="two-column">
+
+                    <div>Working in nominated occupation </div>
+                    <div>A$20,000 </div>
+                </div>
+                <div style="background-color:lightgray;font-weight:bold;border:1px solid black;margin-top: 10px;">OFFSHORE APPLICANTS</div>
+                <div class="two-column">
+
+                    <div style="font-weight:bold;background-color:lightgrey;">
+                        Number of dependents
+                    </div>
+                    <div style="font-weight:bold;background-color:lightgrey;">
+                        Individual applicant
+                    </div>
+                    <div>$30,000</div>
+                    <div>1</div>
+                    <div>$35,000</div>
+                    <div>2</div>
+                    <div>$40,000</div>
+                    <div>3</div>
+                    <div>$50,000</div>
+                    <div>4</div>
+                    <div>$60,000</div>
+                    <div>5</div>
+                    <div>$70,000</div>
+                    <div>6 or more</div>
+                    <div>$80,000</div>
+
+
+                </div>
+            </div>
+            <div class="grid-left">Link</div>
+            <div class="grid-right">
+                <a href="https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/skilled-regional-provisional-visa-subclass-489"
+                   target="_blank">
+                    Skilled Regional (Provisional) visa (subclass 489)
+                </a>
+            </div>
+
 
 
         </div>
-    </div>
-    <div class="grid-left">Link</div>
-    <div class="grid-right">
-        <a href="https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/skilled-regional-provisional-visa-subclass-489"
-           target="_blank">
-            Skilled Regional (Provisional) visa (subclass 489)
-        </a>
-    </div>
-
-
-
-</div>
