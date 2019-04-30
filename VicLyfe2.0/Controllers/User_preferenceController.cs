@@ -23,7 +23,21 @@ namespace VicLyfe2._0.Controllers
             ViewBag.SuburbC = Session["Suburb3"];
             return View();
         }
+         
+        public ActionResult Explor1()
+        {
+            return View();
+        }
 
+            public ActionResult Explor2()
+        {
+            return View();
+        }
+
+        public ActionResult Explor3()
+        {
+            return View();
+        }
 
         public ActionResult Index()
         {
