@@ -18,6 +18,9 @@ namespace VicLyfe2._0.Controllers
 
         public ActionResult Report()
         {
+            ViewBag.SuburbA = Session["Suburb1"];
+            ViewBag.SuburbB = Session["Suburb2"];
+            ViewBag.SuburbC = Session["Suburb3"];
             return View();
         }
 
