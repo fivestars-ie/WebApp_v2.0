@@ -18,10 +18,30 @@ namespace VicLyfe2._0.Controllers
 
         public ActionResult Report()
         {
-            
+            ViewBag.SuburbA = Session["Suburb1"];
+            ViewBag.SuburbB = Session["Suburb2"];
+            ViewBag.SuburbC = Session["Suburb3"];
+            ViewBag.Job_field_A = Session["Job1"];
+            ViewBag.Job_field_B = Session["Job2"];
+            return View();
+        }
+         
+        public ActionResult Explor1()
+        {
+            ViewBag.SuburbA = Session["Suburb1"];
+            return View();
+        }
+            public ActionResult Explor2()
+        {
+            ViewBag.SuburbB = Session["Suburb2"];
             return View();
         }
 
+        public ActionResult Explor3()
+        {
+            ViewBag.SuburbC = Session["Suburb3"];
+            return View();
+        }
 
         public ActionResult Index()
         {
@@ -135,7 +155,8 @@ namespace VicLyfe2._0.Controllers
                 Session["Suburb1"] = suburbs[0];
                 Session["Suburb2"] = suburbs[1];
                 Session["Suburb3"] = suburbs[2];
-
+                Session["Job1"] = user_preference.Job_field_1;
+                Session["Job2"] = user_preference.Job_field_2;
                 return RedirectToAction("Index");
             }
 
