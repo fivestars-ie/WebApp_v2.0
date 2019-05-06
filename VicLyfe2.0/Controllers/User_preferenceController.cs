@@ -28,16 +28,18 @@ namespace VicLyfe2._0.Controllers
          
         public ActionResult Explor1()
         {
+            ViewBag.SuburbA = Session["Suburb1"];
             return View();
         }
-
             public ActionResult Explor2()
         {
+            ViewBag.SuburbB = Session["Suburb2"];
             return View();
         }
 
         public ActionResult Explor3()
         {
+            ViewBag.SuburbC = Session["Suburb3"];
             return View();
         }
 
