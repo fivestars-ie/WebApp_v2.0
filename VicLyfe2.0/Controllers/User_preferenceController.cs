@@ -18,6 +18,7 @@ namespace VicLyfe2._0.Controllers
 
         public ActionResult Report()
         {
+            
             return View();
         }
 
