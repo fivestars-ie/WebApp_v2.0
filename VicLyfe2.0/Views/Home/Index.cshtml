@@ -2,115 +2,218 @@
     ViewBag.Title = "Home Page";
 }
 
+<!DOCTYPE html>
+<html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-    h1, h2, h3, h4, h5, h6 {
-        font-family: "Oswald"
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Raleway", Arial, Helvetica, sans-serif;
+        font-weight:bold;
     }
 
-    body {
-        font-family: "Open Sans"
+    .myLink {
+        display: none
     }
 </style>
-<html>
-<body class="w3-light-grey">
+<body class="w3-light-grey" style="background-color:lavender;">
 
-
-    <!-- w3-content defines a container for fixed size centered content,
-    and is wrapped around the whole page content, except for the footer in this example -->
-    <div class="w3-content" style="max-width:1600px">
-
-        <!-- Header -->
-        <header class="w3-container w3-center w3-padding-48 w3-white">
-            <h1 class="w3-xxxlarge"><b>VicLyfe - A new beginning</b></h1>
-            <h6>Regional Victoria <span class="w3-tag">The place to be</span></h6>
-        </header>
-
-        <!-- Image header -->
-        <header class="w3-display-container w3-wide" id="home">
-            <img class="w3-image" src="~/Content/DSC_6931.jpg" alt="Fashion Blog" width="1600" height="1060" style="opacity:0.8;">
-            <div class="w3-display-left w3-padding-large">
-                <h1 class="w3-text-black">VicLyfe, For Graduates</h1>
-                <h1 class="w3-jumbo w3-text-black w3-hide-small"><b>Moving to Regional Victoria</b></h1>
-                <h6>
-                    <button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off">
-                        <ul>
-                            <li background-color="grey">@Html.ActionLink("Know More", "About", "Home")</li>
-                        </ul>
-                    </button>
-                </h6>
-            </div>
-        </header>
-        <div class="responsive">
-            <div class="w3-container">
-                <hr>
-                <h3><b>We help in PR and finding a Regional City to live.</b></h3>
-                <hr>
-                <h5>Compare the different regions and cities against Melbourne yourself</h5>
-                <p class="btn btn-primary btn-lg" style="background-color: grey; width:200px; margin-right:400px; float: right">
-                    @Html.ActionLink("Comparsion >>", "Compare", "Home")
-                </p>
-                <hr>
-                <hr>
-                <h5>Get how many points could you get for PR application.</h5>
-                <p class="btn btn-primary btn-lg" style="background-color: grey; width:200px; margin-right:400px; float: right">
-                    @Html.ActionLink("Points Calculator >>", "Create", "Points_Calculator")
-                </p>
-                <hr>
-                <hr>
-                <h5>Find the region and suburb for you.</h5>
-                <p class="btn btn-primary btn-lg" style="background-color: grey; width:200px; margin-right:400px; float: right">
-                    @Html.ActionLink("Choose a Suburb >>", "FYR", "FindYourRegion")
-                </p>
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-hide-small" style="max-width:1700px;">
+        <img class="w3-image" src="~/Content/imageNew-1.jpg" alt="London" style="width:1700px;height:500px;">
+        <div class="w3-display-middle" style="width:65%;margin-top:300px;">
+            <div class="w3-bar w3-black">
+                <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Flight');"><i class="fa fa-plane w3-margin-right"></i>Points Calculator</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Hotel');"><i class="fa fa-bed w3-margin-right"></i>Compare Regions</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Car');"><i class="fa fa-car w3-margin-right"></i>Explore Suburb</button>
             </div>
 
+            <!-- Tabs -->
+            <div id="Flight" class="w3-container w3-white w3-padding-16 myLink">
+                <h3>Find out how many points you have before proceeding ?</h3>
+                <div class="w3-row-padding" style="margin:0 -16px;">
+                    <div class="w3-container">
+                    </div>
+                </div>
+                <p><button class="w3-button w3-dark-grey">@Html.ActionLink("Calculate Points", "Create", "Points_Calculator")</button></p>
+            </div>
 
-            <hr>
-            <img src="~/Content/map-of-victoria-australia-s-guide-and-gippsland.jpg" alt="Nature" style="width:100%;height:600px;">
-            <hr>
+            <div id="Hotel" class="w3-container w3-white w3-padding-16 myLink">
+                <h3>Did you know ?</h3>
+                <p>Regional Victoria has a better quality of life vs Melbourne.</p>
+                <p><button class="w3-button w3-dark-grey">@Html.ActionLink("Find out now", "Compare", "Home")</button></p>
+            </div>
+
+            <div id="Car" class="w3-container w3-white w3-padding-16 myLink">
+                <h3>Suburb selected?</h3>
+                <p><span class="w3-tag w3-deep-orange">Great Explore!</span> See what the suburb has to offer in terms of Hospitals, Supermarkets, Restaurants & more</p>
+                <input class="w3-input w3-border" type="text" placeholder="Suburb name">
+                <p><button class="w3-button w3-dark-grey">Explore</button></p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:1700px;margin-top:150px;">
+
+        <!-- Good offers -->
+        <div class="w3-container w3-margin-top">
+            <h2><b>VicLyfe, helping overseas students find a suburb to live in Regional Victoria</b></h2>
+            <h2><b>What we have for you ?</b></h2>
         </div>
 
-            <!-- Footer -->
-            <footer class="w3-center w3-black w3-padding-64">
-                <div>
-                    <p align="center" background-color="grey">@Html.ActionLink("Go Back to the Top", "Index", "Home")</p>
+        <!-- First Photo Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+            <div class="w3-quarter" style="border:double; border-color:skyblue;">
+                <img src="~/Content/rendered-2.jpg" alt="Sandwich" style="width:100%;height:200px;">
+                <h4><button class="w3-button w3-dark-grey">@Html.ActionLink("Our Vision", "About", "Home")</button></h4>
+            </div>
+            <div class="w3-quarter" style="border:double; border-color:skyblue;">
+                <img src="~/Content/1-1024x978.png" alt="Steak" style="width:100%;height:200px;">
+                <h4><button class="w3-button w3-dark-grey">@Html.ActionLink("Why Regional Victoria ?", "Compare", "Home")</button></h4>
+            </div>
+            <div class="w3-quarter" style="border:double; border-color:skyblue;">
+                <img src="~/Content/PR.jpg" alt="Cherries" style="width:100%;height:200px;">
+                <h4><button class="w3-button w3-dark-grey">@Html.ActionLink("Pathway for PR", "PRPath", "Home")</button></h4>
+            </div>
+            <div class="w3-quarter" style="border:double; border-color:skyblue;">
+                <img src="~/Content/20151118_regionalvictoria.png" alt="Pasta and Wine" style="width:100%;height:200px;">
+                <h4><button class="w3-button w3-dark-grey">@Html.ActionLink("Explore Regional Suburb", "Explor1", "User_preference")</button></h4>
+            </div>
+        </div>
+
+        <div class="w3-container w3-margin-top">
+            <h3>Some of the major Regional Victorian Cities</h3>
+            <h4>A visual treat !! Is'nt it?</h4>
+        </div>
+        <div class="w3-row-padding w3-text-white w3-large">
+            <div class="w3-half w3-margin-bottom">
+                <div class="w3-display-container">
+                    <img src="~/Content/Ballarat.jpg" alt="Cinque Terre" style="width:100%">
+                    <span class="w3-display-bottomleft w3-padding">Ballarat</span>
                 </div>
-                <div class="w3-xlarge w3-section">
-                    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-                    <i class="fa fa-instagram w3-hover-opacity"></i>
-                    <i class="fa fa-snapchat w3-hover-opacity"></i>
-                    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-                    <i class="fa fa-twitter w3-hover-opacity"></i>
-                    <i class="fa fa-linkedin w3-hover-opacity"></i>
+            </div>
+            <div class="w3-half">
+                <div class="w3-row-padding" style="margin:0 -16px">
+                    <div class="w3-half w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <img src="~/Content/BAWBAW.jpg" alt="New York" style="width:100%">
+                            <span class="w3-display-bottomleft w3-padding">Baw Baw</span>
+                        </div>
+                    </div>
+                    <div class="w3-half w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <img src="~/Content/Bendigo.jpg" alt="San Francisco" style="width:100%">
+                            <span class="w3-display-bottomleft w3-padding">Bendigo</span>
+                        </div>
+                    </div>
                 </div>
-            </footer>
+                <div class="w3-row-padding" style="margin:0 -16px">
+                    <div class="w3-half w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <img src="~/Content/Geelong.jpg" alt="Pisa" style="width:100%">
+                            <span class="w3-display-bottomleft w3-padding">Geelong</span>
+                        </div>
+                    </div>
+                    <div class="w3-half w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <img src="~/Content/Image-new-2.jpg" alt="Paris" style="width:100%">
+                            <span class="w3-display-bottomleft w3-padding">Mt Buller</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="w3-container" style="max-width:1700px;height:500px;">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            .mySlides {
+                display: none;
+            }
+        </style>
 
+        <div class="w3-content w3-display-container">
+            <img class="mySlides" src="~/Content/R1-new.png" style="width:100%;height:500px;">
+            <img class="mySlides" src="~/Content/R2-new.png" style="width:100%;height:500px;">
+            <img class="mySlides" src="~/Content/R3-new.png" style="width:100%;height:500px;">
+            <img class="mySlides" src="~/Content/R4-new.png" style="width:100%;height:500px;">
+            <img class="mySlides" src="~/Content/R5-new.png" style="width:100%;height:500px;">
+            <img class="mySlides" src="~/Content/R6-new.png" style="width:100%;height:500px;">
+            <img class="mySlides" src="~/Content/R7-new.png" style="width:100%;height:500px;">
 
-            <script>
-                // Toggle between hiding and showing blog replies/comments
-                document.getElementById("myBtn").click();
-                function myFunction(id) {
-                    var x = document.getElementById(id);
-                    if (x.className.indexOf("w3-show") == -1) {
-                        x.className += " w3-show";
-                    } else {
-                        x.className = x.className.replace(" w3-show", "");
-                    }
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        <div class="w3-bar" style="margin-bottom:-125px;">
+            <button class="w3-button w3-dark-grey" align="center" style="margin-left: 300px;
+    margin-top: -40px;
+    position: absolute;">@Html.ActionLink("Comapre the different regions", "Compare", "Home")</button>
+        </div>
+        <br />
+        <br />
+        <br />
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
                 }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
+    </div>
 
-                function likeFunction(x) {
-                    x.style.fontWeight = "bold";
-                    x.innerHTML = "✓ Liked";
+        <!-- Footer -->
+        <footer class="w3-center w3-black w3-padding-64" style="max-width:1700px;">
+            <div>
+                <p align="center" background-color="grey">@Html.ActionLink("Go Back to the Top", "Index", "Home")</p>
+            </div>
+            <div class="w3-xlarge w3-section">
+                <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                <i class="fa fa-instagram w3-hover-opacity"></i>
+                <i class="fa fa-snapchat w3-hover-opacity"></i>
+                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                <i class="fa fa-twitter w3-hover-opacity"></i>
+                <i class="fa fa-linkedin w3-hover-opacity"></i>
+            </div>
+        </footer>
+
+        <script>
+            // Tabs
+            function openLink(evt, linkName) {
+                var i, x, tablinks;
+                x = document.getElementsByClassName("myLink");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
                 }
-            </script>
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < x.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+                }
+                document.getElementById(linkName).style.display = "block";
+                evt.currentTarget.className += " w3-red";
+            }
+
+            // Click on the first tablink on load
+            document.getElementsByClassName("tablink")[0].click();
+        </script>
 
 </body>
 </html>
-
 
