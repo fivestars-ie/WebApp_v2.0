@@ -16,6 +16,11 @@ namespace VicLyfe2._0.Controllers
             return View();
         }
 
+        public ActionResult Compare()
+        {
+            return View();
+        }
+
         public ActionResult PRPath()
         {
             ViewBag.Message = "Your PR Suggestions.";

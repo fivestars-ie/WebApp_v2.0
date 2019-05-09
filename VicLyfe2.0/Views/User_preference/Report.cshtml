@@ -3,43 +3,81 @@
     ViewBag.Title = "Report";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h1>Report</h1>
+<h3>
+    <b>
+        Based on the preferences we have suggested 3 suburbs. We have kept all your preferences into consideration
+        while choosing the suburbs
+    </b>
+</h3>
+<body>
+    <style>
+        ul.a {
+            list-style-position: outside;
+        }
+    </style>
+    <ul class="a">
+        <li><h4>@ViewBag.Suburb1</h4></li>
+        <button onclick="{location.href='Explor1'}" class="btn btn-primary btn-lg" style="float: right">
+            <font size=4px>Explore this sucurb</font>
+        </button>
+        <br> </br>
 
-<h3>Use filter at right to search and select the suburbs. </h3>
-<h3>Download the report via download link at buttom right.</h3>
-<br />
+        <li><h4>@ViewBag.Suburb2</h4></li>
+        <button onclick="{location.href='Explor2'}" class="btn btn-primary btn-lg" style="float: right">
+            <font size=4px>Explore this sucurb</font>
+        </button>
+        <br> </br>
+        <li><h4>@ViewBag.Suburb3</h4></li>
+        <button onclick="{location.href='Explor3'}" class="btn btn-primary btn-lg" style="float: right">
+            <font size=4px>Explore this sucurb</font>
+        </button>
+        <br> </br>
 
-<p class="btn btn-primary btn-lg" style="background-color: white; float: right">
-    @Html.ActionLink("Return", "Index", "User_preference")
-</p>
+    </ul>
+    <br />
 
-<br />
-<div class='tableauPlaceholder' id='viz1556436311670' style='position: relative'>
-    <noscript><a href='#'>
-    <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;I2&#47;I2_Download1&#47;
-         Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript>
-    <object class='tableauViz' style='display:none;'>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-        <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
-        <param name='name' value='I2_Download1&#47;Dashboard1' />
-        <param name='tabs' value='no' />
-        <param name='toolbar' value='no' />
-        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;
+
+
+    <button onclick="{location.href='Index'}" class="btn btn-primary btn-lg">
+        <font size=4px>Hide result</font>
+    </button>
+
+    <button onclick="{location.href='Create'}" class="btn btn-primary btn-lg" style="float: right">
+        <font size=4px>Return</font>
+    </button>
+
+    <br />
+    <div class='tableauPlaceholder' id='viz1556436311670' style='position: relative'>
+        <noscript>
+            <a href='#'>
+                <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;I2&#47;I2_Download1&#47;
+         Dashboard1&#47;1_rss.png' style='border: none' />
+            </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+            <param name='name' value='I2_Download1&#47;Dashboard1' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='no' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;
            images&#47;I2&#47;I2_Download1&#47;Dashboard1&#47;1.png' />
-        <param name='animate_transition' value='yes' />
-        <param name='display_static_image' value='yes' />
-        <param name='display_spinner' value='yes' />
-        <param name='display_overlay' value='yes' />
-        <param name='display_count' value='yes' />
-        <param name='filter' value='publish=no' />
-        <param name='filter' value='Job_type=@ViewBag.Job_field_A,@ViewBag.Job_field_B' />
-        <param name='filter' value='Suburb_name=@ViewBag.SuburbA,@ViewBag.SuburbB,@ViewBag.SuburbC' />
-    </object></div>
-<script type='text/javascript'>var divElement = document.getElementById('viz1556436311670');
-    var vizElement = divElement.getElementsByTagName('object')[0];
-    vizElement.style.width = '1000px'; vizElement.style.height = '1000px';
-    var scriptElement = document.createElement('script');
-    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-    vizElement.parentNode.insertBefore(scriptElement, vizElement);
-</script>
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='filter' value='publish=no' />
+            <param name='filter' value='Job_type=@ViewBag.Job_field_A,@ViewBag.Job_field_B' />
+            <param name='filter' value='Suburb_name=@ViewBag.SuburbA,@ViewBag.SuburbB,@ViewBag.SuburbC' />
+        </object>
+    </div>
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1556436311670');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width = '1000px'; vizElement.style.height = '1000px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
 

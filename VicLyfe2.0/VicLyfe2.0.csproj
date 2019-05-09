@@ -158,7 +158,6 @@
     <Compile Include="Controllers\AggregatesController.cs" />
     <Compile Include="Controllers\FindYourRegionController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\InformationHubController.cs" />
     <Compile Include="Controllers\Points_CalculatorController.cs" />
     <Compile Include="Controllers\RegionsController.cs" />
     <Compile Include="Controllers\Selected_regionController.cs" />
@@ -282,10 +281,6 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
-    <Content Include="Views\InformationHub\InformationHub.cshtml" />
-    <Content Include="Views\InformationHub\ViewPage1.cshtml" />
-    <Content Include="Views\InformationHub\ViewPage2.cshtml" />
-    <Content Include="Views\InformationHub\ViewPage3.cshtml" />
     <Content Include="Views\FindYourRegion\FYR.cshtml" />
     <Content Include="Views\Aggregates\Index.cshtml" />
     <Content Include="Views\Points_Calculator\Create.cshtml" />
@@ -302,6 +297,7 @@
     <Content Include="Views\User_preference\Explor1.cshtml" />
     <Content Include="Views\User_preference\Explor2.cshtml" />
     <Content Include="Views\User_preference\Explor3.cshtml" />
+    <Content Include="Views\Home\Compare.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -46,55 +46,34 @@
                 </h6>
             </div>
         </header>
-        <div class="w3-container" style="padding:32px 16px" id="about">
-            <p class="responsive" style="text-align:center; margin-top:10px;margin-bottom:20px;">
-                Today’s world is smaller than it has ever been. Places that once seemed too far away to ever imagine travelling
-                there now feel within reach, offering new and exciting opportunities to begin life afresh.
-                And so it is for the many thousands of people who come from lands afar to make Australia their new home.
-                Regional Victoria is hugely active in attracting and supporting migrants in setting up their new lives. From help
-                with the many visa options available, to the provision of useful resources such as those linked below, regional cities
-                and shires offer invaluable assistance to make the process of moving
-                into their region from overseas as smooth and successful as possible.
-            </p>
-
-            <div class="w3-container" style="padding:64px 16px" id="about">
-                <h3 class="w3-center">What Regional Victoria Offers for you ?</h3>
-                <p class="w3-center w3-large">A Never ending satisfaction just a few minutes away from you.</p>
-                <div class="w3-row-padding w3-center" style="margin-top:50px">
-                    <div class="w3-quarter">
-                        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-                        <p class="w3-large">Jobs</p>
-                        <p>
-                            One of the biggest concerns of anyone planning to move is that of employment. You are not alone here ! We have
-                            plenty of resources to offer.
-                        </p>
-                    </div>
-                    <div class="w3-quarter">
-                        <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-                        <p class="w3-large">Cost and Quality of Living</p>
-                        <p>
-                            Enjor superior quality of life with affordable cost of housing and other facilities. Do not pay more when you
-                            can enjoy the same benefits at a much reasonable price.
-                        </p>
-                    </div>
-                    <div class="w3-quarter">
-                        <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-                        <p class="w3-large">Hospitals</p>
-                        <p>
-                            Equal number of Health care centers are in Regional Victoria too. You do not have to worry about not having access
-                            to emergency health services. Explore Hospitals around you in a click !
-                        </p>
-                    </div>
-                    <div class="w3-quarter">
-                        <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-                        <p class="w3-large">Safety and Security</p>
-                        <p>
-                            A wonderful place to live and build your career with very low crime rate and stress free life. Do not have to worry
-                            about any emergency incidents. Victorian Police Services are always with you.
-                        </p>
-                    </div>
-                </div>
+        <div class="responsive">
+            <div class="w3-container">
+                <hr>
+                <h3><b>We help in PR and finding a Regional City to live.</b></h3>
+                <hr>
+                <h5>Compare the different regions and cities against Melbourne yourself</h5>
+                <p class="btn btn-primary btn-lg" style="background-color: grey; width:200px; margin-right:400px; float: right">
+                    @Html.ActionLink("Comparsion >>", "Compare", "Home")
+                </p>
+                <hr>
+                <hr>
+                <h5>Get how many points could you get for PR application.</h5>
+                <p class="btn btn-primary btn-lg" style="background-color: grey; width:200px; margin-right:400px; float: right">
+                    @Html.ActionLink("Points Calculator >>", "Create", "Points_Calculator")
+                </p>
+                <hr>
+                <hr>
+                <h5>Find the region and suburb for you.</h5>
+                <p class="btn btn-primary btn-lg" style="background-color: grey; width:200px; margin-right:400px; float: right">
+                    @Html.ActionLink("Choose a Suburb >>", "FYR", "FindYourRegion")
+                </p>
             </div>
+
+
+            <hr>
+            <img src="~/Content/map-of-victoria-australia-s-guide-and-gippsland.jpg" alt="Nature" style="width:100%;height:600px;">
+            <hr>
+        </div>
 
             <!-- Footer -->
             <footer class="w3-center w3-black w3-padding-64">

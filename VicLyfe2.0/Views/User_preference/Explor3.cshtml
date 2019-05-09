@@ -17,16 +17,65 @@
 </div>
 <script type='text/javascript'>var divElement = document.getElementById('viz1557037508417'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
 
-
-<br> </br>
+<br /> </br>
 <h4>Find the resturants in this suburb on Zomato!</h4>
 <p><a href="https://www.zomato.com/" class="btn btn-primary btn-lg" style="float: middle">Jump</a></p>
 
-<br> </br>
+<br /> </br>
 <h4>Find the public transport in this suburb on PTV!</h4>
 <p><a href="https://www.ptv.vic.gov.au/" class="btn btn-primary btn-lg">Jump</a></p>
 
-<br> </br>
+<br /> </br>
 <h4>Find the shopping cemtres in this suburb on Google map!</h4>
 <p><a href="https://www.google.com.au/maps/search/shopping+centre/" class="btn btn-primary btn-lg">Jump</a></p>
 
+
+
+
+<div id="map"></div>
+<!-- Replace the value of the key parameter with your own API key. -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDup5_Payp5tju9PxCkWaBZnErOU7raAg8&libraries=places&callback=initMap" async=async async=async async=async async=async async=async async=async async=async async=async defer=defer defer=defer defer=defer defer=defer defer=defer defer=defer defer=defer defer=defer></script>
+
+<script>
+var map;
+var service;
+var infowindow;
+
+function initMap() {
+  var sydney = new google.maps.LatLng(-33.867, 151.195);
+
+  infowindow = new google.maps.InfoWindow();
+
+  map = new google.maps.Map(
+      document.getElementById('map'), {center: sydney, zoom: 15});
+
+  var request = {
+    query: 'Museum of Contemporary Art Australia',
+    fields: ['name', 'geometry'],
+  };
+
+  service = new google.maps.places.PlacesService(map);
+
+  service.findPlaceFromQuery(request, function(results, status) {
+    if (status === google.maps.places.PlacesServiceStatus.OK) {
+      for (var i = 0; i < results.length; i++) {
+        createMarker(results[i]);
+      }
+
+      map.setCenter(results[0].geometry.location);
+    }
+  });
+}
+
+function createMarker(place) {
+  var marker = new google.maps.Marker({
+    map: map,
+    position: place.geometry.location
+  });
+
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.setContent(place.name);
+    infowindow.open(map, this);
+  });
+}
+    </script>

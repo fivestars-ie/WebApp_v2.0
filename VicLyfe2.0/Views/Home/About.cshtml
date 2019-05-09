@@ -6,6 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
     body, h1, h2, h3, h4, h5 {
         font-family: "Raleway", sans-serif
@@ -46,7 +50,7 @@
                             <div class="w3-col m8 s12">
                                 <p>
                                     <button class="w3-button w3-padding-large w3-white w3-border">
-                                            @Html.ActionLink("Find out how ->", "PRPath", "Home")
+                                        @Html.ActionLink("Find out how ->", "PRPath", "Home")
                                     </button>
                                 </p>
                             </div>
@@ -54,62 +58,92 @@
                     </div>
                 </div>
                 <hr>
+                <div class="w3-container" style="padding:32px 16px" id="about">
+                    <p class="responsive" style="text-align:center; margin-top:10px;margin-bottom:20px;">
+                        Today’s world is smaller than it has ever been. Places that once seemed too far away to ever imagine travelling
+                        there now feel within reach, offering new and exciting opportunities to begin life afresh.
+                        And so it is for the many thousands of people who come from lands afar to make Australia their new home.
+                        Regional Victoria is hugely active in attracting and supporting migrants in setting up their new lives. From help
+                        with the many visa options available, to the provision of useful resources such as those linked below, regional cities
+                        and shires offer invaluable assistance to make the process of moving
+                        into their region from overseas as smooth and successful as possible.
+                    </p>
 
-                <div class="responsive">
-                    <img src="~/Content/map-of-victoria-australia-s-guide-and-gippsland.jpg" alt="Nature" style="width:100%;height:600px;">
-                    <div class="w3-container">
-                        <h3><b>Not just PR. We help in finding a Regional City to live.</b></h3>
-                        <h5>Compare the different regions and cities against Melbourne yourself</h5>
+                    <div class="w3-container" style="padding:64px 16px" id="about">
+                        <h3 class="w3-center">What Regional Victoria Offers for you ?</h3>
+                        <p class="w3-center w3-large">A Never ending satisfaction just a few minutes away from you.</p>
+                        <div class="w3-row-padding w3-center" style="margin-top:50px">
+                            <div class="w3-quarter">
+                                <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+                                <p class="w3-large">Jobs</p>
+                                <p>
+                                    One of the biggest concerns of anyone planning to move is that of employment. You are not alone here ! We have
+                                    plenty of resources to offer.
+                                </p>
+                            </div>
+                            <div class="w3-quarter">
+                                <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+                                <p class="w3-large">Cost and Quality of Living</p>
+                                <p>
+                                    Enjor superior quality of life with affordable cost of housing and other facilities. Do not pay more when you
+                                    can enjoy the same benefits at a much reasonable price.
+                                </p>
+                            </div>
+                            <div class="w3-quarter">
+                                <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+                                <p class="w3-large">Hospitals</p>
+                                <p>
+                                    Equal number of Health care centers are in Regional Victoria too. You do not have to worry about not having access
+                                    to emergency health services. Explore Hospitals around you in a click !
+                                </p>
+                            </div>
+                            <div class="w3-quarter">
+                                <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+                                <p class="w3-large">Safety and Security</p>
+                                <p>
+                                    A wonderful place to live and build your career with very low crime rate and stress free life. Do not have to worry
+                                    about any emergency incidents. Victorian Police Services are always with you.
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="w3-container">
-                        <p>
-                            Considering the fact that moving from Melbourne to regional Victoria is not an easy decision,
-                            we assist you with choosing the Region and City which is most suitable for you considering
-                            your basic needs. We provide you a comparison of the Regional cities with Melbourne to give
-                            you a basic idea of how good the quality of life there is.
-                            Regional Victoria has 5 Regions: Loddon Mallee, Barwon South West, Gippsland, Grampians, Hume
-                            Regional Victoria has 10 Cities: Geelong, Ballarat, Bendigo, Horsham, Latrobe, Mildura, Shepparton,
-                            Wangaratta, Warrnambool, Wodonga.
-                            Compare between these or compare them with Melbourne to find out which suits you.
-                        </p>                        
-                    </div>
+                    
                 </div>
-            </div>
 
 
 
-            <!-- END GRID -->
-        </div><br>
+                <!-- END GRID -->
+            </div><br>
 
-        <!-- END w3-content -->
-    </div>
+            <!-- END w3-content -->
+        </div>
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
 
-        .slider {
-            width: 100%;
-            height: 500px;
-            display: flex;
-            overflow-x: auto;
-            align-content: center;
-        }
+            .slider {
+                width: 100%;
+                height: 500px;
+                display: flex;
+                overflow-x: auto;
+                align-content: center;
+            }
 
-        .slide {
-            width: 500px;
-            flex-shrink: 0;
-            height: 600px;
-            align-content: center;
-        }
-    </style>
+            .slide {
+                width: 500px;
+                flex-shrink: 0;
+                height: 600px;
+                align-content: center;
+            }
+        </style>
 
-    <br />
-    <!-- Footer -->
-    <footer class="w3-container w3-black w3-padding-32 w3-margin-top">
-        <p style="text-align:center;"><a href="https://regionalliving.vic.gov.au/" target="_blank">Visit Regional Victoria Government Site</a></p>
-    </footer>
+        <br />
+        <!-- Footer -->
+        <footer class="w3-container w3-black w3-padding-32 w3-margin-top">
+            <p style="text-align:center;"><a href="https://regionalliving.vic.gov.au/" target="_blank">Visit Regional Victoria Government Site</a></p>
+        </footer>
 
 </body>
 </html>
