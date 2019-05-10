@@ -15,7 +15,7 @@
 <body>
 
     <button onclick="{location.href='Explor3'}" class="btn btn-primary btn-lg" style="width: 250px">
-        <font size=4px>Hide Restaruants</font>
+        <font size=4px>Hide Restaurants</font>
     </button>
 
     <br>  </br>
@@ -125,7 +125,7 @@
             service.nearbySearch(
                     // use bank , supermarket , cafe , shopping_mall , train_station
 
-            { location: results[0].geometry.location, radius: 50000, type: ['restaruant'] },
+            { location: results[0].geometry.location, radius: 50000, type: ['cafe'] },
             function (results, status, pagination) {
                 if (status !== 'OK') return;
 

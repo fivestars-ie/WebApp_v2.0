@@ -161,6 +161,7 @@
     <Compile Include="Controllers\Points_CalculatorController.cs" />
     <Compile Include="Controllers\RegionsController.cs" />
     <Compile Include="Controllers\Selected_regionController.cs" />
+    <Compile Include="Controllers\SuburbsController.cs" />
     <Compile Include="Controllers\User_preferenceController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -301,7 +302,6 @@
     <Content Include="Views\User_preference\Explor2.cshtml" />
     <Content Include="Views\User_preference\Explor3.cshtml" />
     <Content Include="Views\Home\Compare.cshtml" />
-    <Content Include="Views\User_preference\Explor4.cshtml" />
     <Content Include="Views\User_preference\Explor11.cshtml" />
     <Content Include="Views\User_preference\Explor14.cshtml" />
     <Content Include="Views\User_preference\Explor13.cshtml" />
@@ -314,10 +314,13 @@
     <Content Include="Views\User_preference\Explor32.cshtml" />
     <Content Include="Views\User_preference\Explor33.cshtml" />
     <Content Include="Views\User_preference\Explor34.cshtml" />
-    <Content Include="Views\User_preference\Explor44.cshtml" />
-    <Content Include="Views\User_preference\Explor41.cshtml" />
-    <Content Include="Views\User_preference\Explor42.cshtml" />
-    <Content Include="Views\User_preference\Explor43.cshtml" />
+    <Content Include="Views\Suburbs\Create.cshtml" />
+    <Content Include="Views\Suburbs\Explore4.cshtml" />
+    <Content Include="Views\Suburbs\Explore41.cshtml" />
+    <Content Include="Views\Suburbs\Explore43.cshtml" />
+    <Content Include="Views\Suburbs\Explore42.cshtml" />
+    <Content Include="Views\Suburbs\Explore44.cshtml" />
+    <Content Include="Views\Suburbs\ExploreError.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,5 +1,5 @@
-﻿@{
-    ViewBag.Title = "Explor44";
+﻿
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -16,29 +16,29 @@
 <html>
 <body>
 
-    <button onclick="{location.href='Explor41'}" class="btn btn-primary btn-lg" style="width: 250px">
-        <font size=4px>Show Restaruants</font>
+    <button onclick="{location.href='Explore41'}" class="btn btn-primary btn-lg" style="width: 250px">
+        <font size=4px>Show Restaurants & Cafe's</font>
     </button>
 
     <br>  </br>
     <hr>
 
-    <button onclick="{location.href='Explor42'}" class="btn btn-primary btn-lg" style="width: 250px">
-        <font size=4px>Show Train Station</font>
+    <button onclick="{location.href='Explore42'}" class="btn btn-primary btn-lg" style="width: 250px">
+        <font size=4px>Show Near By Train Station</font>
     </button>
 
     <br>  </br>
     <hr>
 
-    <button onclick="{location.href='Explor43'}" class="btn btn-primary btn-lg" style="width: 250px">
-        <font size=4px>Show Supermarkets</font>
+    <button onclick="{location.href='Explore43'}" class="btn btn-primary btn-lg" style="width: 250px">
+        <font size=4px>Show Near By Supermarkets</font>
     </button>
 
     <br>  </br>
     <hr>
 
-    <button onclick="{location.href='Explor4'}" class="btn btn-primary btn-lg" style="width: 250px">
-        <font size=4px>Hide Hospital</font>
+    <button onclick="{location.href='Explore4'}" class="btn btn-primary btn-lg" style="width: 250px">
+        <font size=4px>Hide Shopping malls</font>
     </button>
 
     <br>  </br>
@@ -148,7 +148,7 @@
             service.nearbySearch(
                     // use bank , supermarket , cafe , shopping_mall , train_station
 
-            { location: results[0].geometry.location, radius: 50000, type: ['hospital'] },
+            { location: results[0].geometry.location, radius: 50000, type: ['shopping_mall'] },
             function (results, status, pagination) {
                 if (status !== 'OK') return;
 
@@ -169,6 +169,7 @@
 
 </body>
 </html>
+
 
 
 

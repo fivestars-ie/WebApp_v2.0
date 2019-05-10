@@ -116,35 +116,6 @@ namespace VicLyfe2._0.Controllers
             return View();
         }
 
-        public ActionResult Explor4()
-        {
-            ViewBag.Suburb4 = "clayton";
-            return View();
-        }
-
-        public ActionResult Explor41()
-        {
-            ViewBag.Suburb4 = "clayton";
-            return View();
-        }
-
-        public ActionResult Explor42()
-        {
-            ViewBag.Suburb4 = "clayton";
-            return View();
-        }
-
-        public ActionResult Explor43()
-        {
-            ViewBag.Suburb4 = "clayton";
-            return View();
-        }
-
-        public ActionResult Explor44()
-        {
-            ViewBag.Suburb4 = "clayton";
-            return View();
-        }
 
         public ActionResult Index()
         {

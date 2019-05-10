@@ -1,5 +1,6 @@
-﻿@{
-    ViewBag.Title = "Explor43";
+﻿@model IEnumerable<VicLyfe2._0.Models.Suburb>
+
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -16,22 +17,15 @@
 <html>
 <body>
 
-    <button onclick="{location.href='Explor41'}" class="btn btn-primary btn-lg" style="width: 250px">
-        <font size=4px>Show Restaruants</font>
+    <button onclick="{location.href='Explore41'}" class="btn btn-primary btn-lg" style="width: 250px">
+        <font size=4px>Show Restaurants & Cafe's</font>
     </button>
 
     <br>  </br>
     <hr>
 
-    <button onclick="{location.href='Explor42'}" class="btn btn-primary btn-lg" style="width: 250px">
-        <font size=4px>Show Train Station</font>
-    </button>
-
-    <br>  </br>
-    <hr>
-
-    <button onclick="{location.href='Explor4'}" class="btn btn-primary btn-lg" style="width: 250px">
-        <font size=4px>Hide Supermarkets</font>
+    <button onclick="{location.href='Explore4'}" class="btn btn-primary btn-lg" style="width: 250px">
+        <font size=4px>Hide Near By Train Station</font>
     </button>
 
     <br>  </br>
@@ -141,7 +135,7 @@
             service.nearbySearch(
                     // use bank , supermarket , cafe , shopping_mall , train_station
 
-            { location: results[0].geometry.location, radius: 50000, type: ['supermarket'] },
+            { location: results[0].geometry.location, radius: 50000, type: ['train_station'] },
             function (results, status, pagination) {
                 if (status !== 'OK') return;
 
@@ -162,8 +156,15 @@
     <br>  </br>
     <hr>
 
-    <button onclick="{location.href='Explor44'}" class="btn btn-primary btn-lg" style="width: 250px">
-        <font size=4px>Show Hospital</font>
+    <button onclick="{location.href='Explore43'}" class="btn btn-primary btn-lg" style="width: 250px">
+        <font size=4px>Show Near By Supermarkets</font>
+    </button>
+
+    <br>  </br>
+    <hr>
+
+    <button onclick="{location.href='Explore44'}" class="btn btn-primary btn-lg" style="width: 250px">
+        <font size=4px>Show Near By Shopping Malls</font>
     </button>
 
 
