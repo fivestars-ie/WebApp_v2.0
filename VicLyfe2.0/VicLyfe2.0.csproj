@@ -302,6 +302,22 @@
     <Content Include="Views\User_preference\Explor3.cshtml" />
     <Content Include="Views\Home\Compare.cshtml" />
     <Content Include="Views\User_preference\Explor4.cshtml" />
+    <Content Include="Views\User_preference\Explor11.cshtml" />
+    <Content Include="Views\User_preference\Explor14.cshtml" />
+    <Content Include="Views\User_preference\Explor13.cshtml" />
+    <Content Include="Views\User_preference\Explor12.cshtml" />
+    <Content Include="Views\User_preference\Explor24.cshtml" />
+    <Content Include="Views\User_preference\Explor21.cshtml" />
+    <Content Include="Views\User_preference\Explor22.cshtml" />
+    <Content Include="Views\User_preference\Explor23.cshtml" />
+    <Content Include="Views\User_preference\Explor31.cshtml" />
+    <Content Include="Views\User_preference\Explor32.cshtml" />
+    <Content Include="Views\User_preference\Explor33.cshtml" />
+    <Content Include="Views\User_preference\Explor34.cshtml" />
+    <Content Include="Views\User_preference\Explor44.cshtml" />
+    <Content Include="Views\User_preference\Explor41.cshtml" />
+    <Content Include="Views\User_preference\Explor42.cshtml" />
+    <Content Include="Views\User_preference\Explor43.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

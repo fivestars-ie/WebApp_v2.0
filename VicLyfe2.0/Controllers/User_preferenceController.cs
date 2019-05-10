@@ -31,7 +31,56 @@ namespace VicLyfe2._0.Controllers
             ViewBag.SuburbA = Session["Suburb1"];
             return View();
         }
-            public ActionResult Explor2()
+
+        public ActionResult Explor11()
+        {
+            ViewBag.SuburbA = Session["Suburb1"];
+            return View();
+        }
+
+        public ActionResult Explor12()
+        {
+            ViewBag.SuburbA = Session["Suburb1"];
+            return View();
+        }
+
+        public ActionResult Explor13()
+        {
+            ViewBag.SuburbA = Session["Suburb1"];
+            return View();
+        }
+
+        public ActionResult Explor14()
+        {
+            ViewBag.SuburbA = Session["Suburb1"];
+            return View();
+        }
+
+        public ActionResult Explor2()
+        {
+            ViewBag.SuburbB = Session["Suburb2"];
+            return View();
+        }
+
+        public ActionResult Explor21()
+        {
+            ViewBag.SuburbB = Session["Suburb2"];
+            return View();
+        }
+
+        public ActionResult Explor22()
+        {
+            ViewBag.SuburbB = Session["Suburb2"];
+            return View();
+        }
+
+        public ActionResult Explor23()
+        {
+            ViewBag.SuburbB = Session["Suburb2"];
+            return View();
+        }
+
+        public ActionResult Explor24()
         {
             ViewBag.SuburbB = Session["Suburb2"];
             return View();
@@ -43,9 +92,57 @@ namespace VicLyfe2._0.Controllers
             return View();
         }
 
+        public ActionResult Explor31()
+        {
+            ViewBag.SuburbC = Session["Suburb3"];
+            return View();
+        }
+
+        public ActionResult Explor32()
+        {
+            ViewBag.SuburbC = Session["Suburb3"];
+            return View();
+        }
+
+        public ActionResult Explor33()
+        {
+            ViewBag.SuburbC = Session["Suburb3"];
+            return View();
+        }
+
+        public ActionResult Explor34()
+        {
+            ViewBag.SuburbC = Session["Suburb3"];
+            return View();
+        }
+
         public ActionResult Explor4()
         {
+            ViewBag.Suburb4 = "clayton";
+            return View();
+        }
 
+        public ActionResult Explor41()
+        {
+            ViewBag.Suburb4 = "clayton";
+            return View();
+        }
+
+        public ActionResult Explor42()
+        {
+            ViewBag.Suburb4 = "clayton";
+            return View();
+        }
+
+        public ActionResult Explor43()
+        {
+            ViewBag.Suburb4 = "clayton";
+            return View();
+        }
+
+        public ActionResult Explor44()
+        {
+            ViewBag.Suburb4 = "clayton";
             return View();
         }
 

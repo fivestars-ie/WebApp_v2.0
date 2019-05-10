@@ -4,62 +4,46 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>"Suburb name"</h2>
+<h2>@ViewBag.Suburb4</h2>
 
 <p class="btn btn-primary btn-lg" style="background-color: white; float: right">
     @Html.ActionLink("<< Back to Home", "Index", "Home")
 </p>
+
 <br>  </br>
 <hr>
-
-<script>
-    function showhide(id) {
-        var e = document.getElementById(id);
-        e.style.display = (e.style.display == 'block') ? 'none' : 'block';
-    }
-
-</script>
 
 <html>
 <body>
 
-    <a href="javascript:showhide('restaruant')" class="btn btn-primary btn-lg" style="width: 250px">
-        Show/Hide Restaruants
-    </a>
+    <button onclick="{location.href='Explor41'}" class="btn btn-primary btn-lg" style="width: 250px">
+        <font size=4px>Show Restaruants</font>
+    </button>
 
-    <div id="restaruant" style="display:none;">
-        <p>There should be a map and result list of restaruants.</p>
-    </div>
-
+    <br>  </br>
     <hr>
 
-    <a href="javascript:showhide('station')" class="btn btn-primary btn-lg" style="width: 250px">
-        Show/Hide Train station
-    </a>
+    <button onclick="{location.href='Explor42'}" class="btn btn-primary btn-lg" style="width: 250px">
+        <font size=4px>Show Train Station</font>
+    </button>
 
-    <div id="station" style="display:none;">
-        <p>There should be a map and result list of train stations.</p>
-    </div>
-
+    <br>  </br>
     <hr>
 
-    <a href="javascript:showhide('mall')" class="btn btn-primary btn-lg" style="width: 250px">
-        Show/Hide Shopping mall
-    </a>
+    <button onclick="{location.href='Explor43'}" class="btn btn-primary btn-lg" style="width: 250px">
+        <font size=4px>Show Supermarkets</font>
+    </button>
 
-    <div id="mall" style="display:none;">
-        <p>There should be a map and result list of shopping malls.</p>
-    </div>
-
+    <br>  </br>
     <hr>
 
-    <a href="javascript:showhide('hospital')" class="btn btn-primary btn-lg" style="width: 250px">
-        Show/Hide Hospital
-    </a>
+    <button onclick="{location.href='Explor44'}" class="btn btn-primary btn-lg" style="width: 250px">
+        <font size=4px>Show Hospital</font>
+    </button>
 
-    <div id="hospital" style="display:none;">
-        <p>There should be a map and result list of hospitals.</p>
-    </div>
 
 </body>
 </html>
+
+
+
