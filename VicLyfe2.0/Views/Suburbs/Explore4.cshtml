@@ -35,28 +35,29 @@
 
     <br>  </br>
     <div>
-        <div id="map"></div>
-        <div id="right-panel">
+        <center>
+            <div id="map"></div>
+            <div id="right-panel">
 
-            <ul id="places"></ul>
-            <button id="more">More results</button>
-        </div>
-        <!-- Replace the value of the key parameter with your own API key. -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDup5_Payp5tju9PxCkWaBZnErOU7raAg8&libraries=places&callback=initMap" async defer></script>
-        <style type="text/css">
-            /* Always set the map height explicitly to define the size of the div
+                <ul id="places"></ul>
+                <button id="more">More results</button>
+            </div>
+            <!-- Replace the value of the key parameter with your own API key. -->
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDup5_Payp5tju9PxCkWaBZnErOU7raAg8&libraries=places&callback=initMap" async defer></script>
+            <style type="text/css">
+                /* Always set the map height explicitly to define the size of the div
                     * element that contains the map. */
-            #map {
-                height: 600px;
-                width: 700px;
-            }
+                #map {
+                    height: 400px;
+                    width: 900px;
+                }
 
-            #more {
-                width: 100%;
-                margin: 5px 0 0 0;
-            }
-        </style>
-        <script type="text/javascript">
+                #more {
+                    width: 100%;
+                    margin: 5px 0 0 0;
+                }
+            </style>
+            <script type="text/javascript">
     // This example requires the Places library. Include the libraries=places
     // parameter when you first load the API. For example:
     // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
@@ -155,7 +156,8 @@
     }
   });
 }
-        </script>
-    </div>
+            </script>
+            </center>
+</div>
 </body>
 </html>
