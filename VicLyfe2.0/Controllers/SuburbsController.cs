@@ -77,6 +77,12 @@ namespace VicLyfe2._0.Controllers
             return View();
         }
 
+        public ActionResult Explore45()
+        {
+            ViewBag.Suburb4 = Session["Suburb4"];
+            return View();
+        }
+
         public ActionResult ExploreError()
         {
             return View();

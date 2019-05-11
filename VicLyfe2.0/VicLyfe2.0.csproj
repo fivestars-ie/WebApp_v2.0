@@ -326,6 +326,10 @@
     <Content Include="Views\Suburbs\Explore42.cshtml" />
     <Content Include="Views\Suburbs\Explore44.cshtml" />
     <Content Include="Views\Suburbs\ExploreError.cshtml" />
+    <Content Include="Views\User_preference\Explor15.cshtml" />
+    <Content Include="Views\User_preference\Explor25.cshtml" />
+    <Content Include="Views\User_preference\Explor35.cshtml" />
+    <Content Include="Views\Suburbs\Explore45.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

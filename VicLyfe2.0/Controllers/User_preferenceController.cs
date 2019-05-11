@@ -56,6 +56,12 @@ namespace VicLyfe2._0.Controllers
             return View();
         }
 
+        public ActionResult Explor15()
+        {
+            ViewBag.SuburbA = Session["Suburb1"];
+            return View();
+        }
+
         public ActionResult Explor2()
         {
             ViewBag.SuburbB = Session["Suburb2"];
@@ -81,6 +87,12 @@ namespace VicLyfe2._0.Controllers
         }
 
         public ActionResult Explor24()
+        {
+            ViewBag.SuburbB = Session["Suburb2"];
+            return View();
+        }
+
+        public ActionResult Explor25()
         {
             ViewBag.SuburbB = Session["Suburb2"];
             return View();
@@ -115,6 +127,12 @@ namespace VicLyfe2._0.Controllers
             ViewBag.SuburbC = Session["Suburb3"];
             return View();
         }
+        public ActionResult Explor35()
+        {
+            ViewBag.SuburbC = Session["Suburb3"];
+            return View();
+        }
+
 
 
         public ActionResult Index()

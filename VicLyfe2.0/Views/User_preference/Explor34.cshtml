@@ -14,21 +14,24 @@
 <html>
 <body>
 
-    <td>&emsp;&emsp;</td>
-    <button onclick="{location.href='Explor31'}" class="btn btn-primary btn-lg" style="width: 250px">
+    <button onclick="{location.href='Explor31'}" class="btn btn-primary btn-lg" style="width: 220px">
         <font size=4px>Show Restaruants</font>
     </button>
-    <td>&emsp;</td>
-    <button onclick="{location.href='Explor32'}" class="btn btn-primary btn-lg" style="width: 250px">
+
+    <button onclick="{location.href='Explor32'}" class="btn btn-primary btn-lg" style="width: 220px">
         <font size=4px>Show Train Station</font>
     </button>
-    <td>&emsp;</td>
-    <button onclick="{location.href='Explor33'}" class="btn btn-primary btn-lg" style="width: 250px">
+
+    <button onclick="{location.href='Explor33'}" class="btn btn-primary btn-lg" style="width: 220px">
         <font size=4px>Show Supermarkets</font>
     </button>
-    <td>&emsp;</td>
-    <button onclick="{location.href='Explor3'}" class="btn btn-primary btn-lg" style="width: 250px; color: black; background-color: white">
-        <font size=4px>Hide Hospital</font>
+
+    <button onclick="{location.href='Explor3'}" class="btn btn-primary btn-lg" style="width: 220px; color: black; background-color: white">
+        <font size=4px>Hide Shopping Centre</font>
+    </button>
+
+    <button onclick="{location.href='Explor35'}" class="btn btn-primary btn-lg" style="width: 220px">
+        <font size=4px>Show Hospital</font>
     </button>
     <hr>
 
@@ -46,8 +49,9 @@
             /* Always set the map height explicitly to define the size of the div
                     * element that contains the map. */
             #map {
-                height: 600px;
-                width: 700px;
+                margin: 0 auto;
+                height: 400px;
+                width: 900px;
             }
 
             #more {
@@ -139,7 +143,7 @@
             service.nearbySearch(
                     // use bank , supermarket , cafe , shopping_mall , train_station
 
-            { location: results[0].geometry.location, radius: 50000, type: ['hospital'] },
+                { location: results[0].geometry.location, radius: 50000, type: ['shopping_mall'] },
             function (results, status, pagination) {
                 if (status !== 'OK') return;
 
