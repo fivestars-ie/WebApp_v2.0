@@ -4,10 +4,33 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Suburb not found Error ! </h2>
-<h4>The Suburb name you have entered is wrong. Please make sure you enter the correct name to explore the suburb.</h4>
 
-<p><button class="w3-button w3-dark-grey">@Html.ActionLink("Enter Again", "Create", "Suburbs")</button></p>
 
-<p><button class="w3-button w3-dark-grey">@Html.ActionLink("Go Back to Home", "Index", "Home")</button></p>
+
+<body>
+    <style type="text/css">
+        #content {
+            border: ridge;
+            margin: 0 auto;
+            width: 400px;
+            height: 200px;
+            border-width: 5px;
+            background: lightgrey;
+        }
+    </style>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="content">
+        <h2>Suburb not found! </h2>
+        <h4>The Suburb name you have entered is wrong. Please make sure you enter the correct name to explore the suburb.</h4>
+        <br>
+        <td>&emsp; &emsp;&emsp;</td>
+        <td><button class="w3-button w3-dark-grey">@Html.ActionLink("Enter Again", "Create", "Suburbs")</button></td>
+        <td>&emsp; &emsp;&emsp;</td>
+        <td><button class="w3-button w3-dark-grey">@Html.ActionLink("Go Back to Home", "Index", "Home")</button></td>
+
+    </div>
+</body>
 

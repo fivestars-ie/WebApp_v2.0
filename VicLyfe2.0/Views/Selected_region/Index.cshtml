@@ -4,12 +4,34 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h3>You have Selected :</h3>
 
-<h4><b>@ViewBag.region</b></h4>
-<hr>
+<body>
+<style type="text/css">
+    #content {
+        border: ridge; 
+        margin: 0 auto; 
+        width: 400px; 
+        height: 200px; 
+        border-width: 5px; 
+        background: lightgrey; 
+    }
+</style>
+<br>
+<br>
+<br>
+<br>
+<div id="content">
+    <h3>&emsp; You have Selected :</h3>
 
-<p class="btn btn-primary btn-lg" style="background-color: white">@Html.ActionLink("Confirm", "Create", "User_preference")</p>
-<td>&emsp; &emsp;&emsp;</td>
-<p class="btn btn-primary btn-lg" style="background-color: white">@Html.ActionLink("Go back", "Create", "Selected_region")</p>
+    <h4><b>&emsp; &emsp;&emsp;&emsp;&emsp; @ViewBag.region</b></h4>
+    <br>
+    <br>
+
+    <td>&emsp; &emsp;&emsp;&emsp;</td>
+    <p class="btn btn-primary btn-lg" style="background-color: white">@Html.ActionLink("Confirm", "Create", "User_preference")</p>
+    <td>&emsp; &emsp;&emsp;</td>
+    <p class="btn btn-primary btn-lg" style="background-color: white">@Html.ActionLink("Go back", "Create", "Selected_region")</p>
+
+</div>
+    </body>
 
