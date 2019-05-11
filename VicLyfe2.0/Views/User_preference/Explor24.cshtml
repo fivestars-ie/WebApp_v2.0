@@ -139,7 +139,7 @@
             service.nearbySearch(
                     // use bank , supermarket , cafe , shopping_mall , train_station
 
-            { location: results[0].geometry.location, radius: 50000, type: ['shopping_mall'] },
+            { location: results[0].geometry.location, radius: 50000, type: ['hospital'] },
             function (results, status, pagination) {
                 if (status !== 'OK') return;
 

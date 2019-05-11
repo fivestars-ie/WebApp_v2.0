@@ -14,30 +14,23 @@
 <html>
 <body>
 
+    <td>&emsp;&emsp;</td>
     <button onclick="{location.href='Explor31'}" class="btn btn-primary btn-lg" style="width: 250px">
         <font size=4px>Show Restaruants</font>
     </button>
-
-    <br>  </br>
-    <hr>
-
+    <td>&emsp;</td>
     <button onclick="{location.href='Explor32'}" class="btn btn-primary btn-lg" style="width: 250px">
         <font size=4px>Show Train Station</font>
     </button>
-
-    <br>  </br>
-    <hr>
-
+    <td>&emsp;</td>
     <button onclick="{location.href='Explor33'}" class="btn btn-primary btn-lg" style="width: 250px">
         <font size=4px>Show Supermarkets</font>
     </button>
-
-    <br>  </br>
-    <hr>
-
-    <button onclick="{location.href='Explor3'}" class="btn btn-primary btn-lg" style="width: 250px">
+    <td>&emsp;</td>
+    <button onclick="{location.href='Explor3'}" class="btn btn-primary btn-lg" style="width: 250px; color: black; background-color: white">
         <font size=4px>Hide Hospital</font>
     </button>
+    <hr>
 
     <br>  </br>
     <div>
@@ -146,7 +139,7 @@
             service.nearbySearch(
                     // use bank , supermarket , cafe , shopping_mall , train_station
 
-            { location: results[0].geometry.location, radius: 50000, type: ['shopping_mall'] },
+            { location: results[0].geometry.location, radius: 50000, type: ['hospital'] },
             function (results, status, pagination) {
                 if (status !== 'OK') return;
 
