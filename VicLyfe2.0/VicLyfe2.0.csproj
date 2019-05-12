@@ -330,11 +330,6 @@
     <Content Include="Views\User_preference\Explor25.cshtml" />
     <Content Include="Views\User_preference\Explor35.cshtml" />
     <Content Include="Views\Suburbs\Explore45.cshtml" />
-    <Content Include="Views\Home\Ballarat.cshtml" />
-    <Content Include="Views\Home\BAWBAW.cshtml" />
-    <Content Include="Views\Home\MtBuller.cshtml" />
-    <Content Include="Views\Home\Geelong.cshtml" />
-    <Content Include="Views\Home\Bendigo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
