@@ -31,7 +31,6 @@
 
     <div class="form-group">
         <p>The average weekly Rent per person for 1bhk unit is around 125AUD. Enter the Rent accoridng to requirement and convinience.</p>
-        @Html.LabelFor(model => model.Expected_Weekly_Rent, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
             @Html.EditorFor(model => model.Expected_Weekly_Rent, new { htmlAttributes = new { @class = "form-control" } })
             @Html.ValidationMessageFor(model => model.Expected_Weekly_Rent, "", new { @class = "text-danger" })
@@ -40,7 +39,6 @@
 
     <div class="form-group">
         <p>How many bedrooms do you need ?</p>
-        @Html.LabelFor(model => model.Number_of_bedrooms, "Number_of_bedrooms", htmlAttributes: new { @class = "control-label col-md-2" })
         <br />
         <br />
         <div class="col-md-10">
@@ -51,7 +49,6 @@
 
     <div class="form-group">
         <p> Still in the Hunt for jobs? Rate your job requirement so that we can provide a suburb with higher job oppurtunity.</p>
-        @Html.LabelFor(model => model.Job_Requirement, "Job_Requirement", htmlAttributes: new { @class = "control-label col-md-2" })
         <br />
         <br />
         <div class="col-md-10">
@@ -62,7 +59,6 @@
 
     <div class="form-group">
         <p> Select the job field if your in search of a job so that we can suggest suburbs with more number of jobs.</p>
-        @Html.LabelFor(model => model.Job_field_1, "Job_field_1", htmlAttributes: new { @class = "control-label col-md-2" })
         <br />
         <br />
         <div class="col-md-10">
@@ -72,7 +68,6 @@
     </div>
 
     <div class="form-group">
-        @Html.LabelFor(model => model.Job_field_2, "Job_field_2", htmlAttributes: new { @class = "control-label col-md-2" })
         <br />
         <br />
         <div class="col-md-10">
@@ -83,7 +78,6 @@
 
     <div class="form-group">
         <p> Need Health services often? Rate your requirement to get a suburb with more number of hospitals.</p>
-        @Html.LabelFor(model => model.Hospital_Service_Requirement, "Hospital_Service_Requirement", htmlAttributes: new { @class = "control-label col-md-2" })
         <br />
         <br />
         <div class="col-md-10">
@@ -93,8 +87,7 @@
     </div>
 
     <div class="form-group">
-        <p> Need a Park & Reserves friendly suburb? Rate your requirement to get a suburb with more number of parks and grounds.</p>
-        @Html.LabelFor(model => model.Do_you_prefer_Parks_and_Reserves, "Do_you_prefer_Parks_and_Reserves", htmlAttributes: new { @class = "control-label col-md-2" })
+        <p> Need a suburb with more greenery and free from buildings and pollution ? Rate your requirement to get a suburb with more number of parks and reserves.</p>
         <br />
         <br />
         <div class="col-md-10">
@@ -104,8 +97,7 @@
     </div>
 
     <div class="form-group">
-        <p> Rate your requirement to get a suburb with more number of colleges.</p>
-        @Html.LabelFor(model => model.Educational_Institutes_Requirement, "Educational_Institutes_Requirement", htmlAttributes: new { @class = "control-label col-md-2" })
+        <p> Rate your requirement to get a suburb with more number of institutions providing Certification Courses.</p>
         <br />
         <br />
         <div class="col-md-10">

@@ -38,7 +38,6 @@
 
             <div class="form-group">
                 <p>Select the Age Group you belong to from the drop down below.</p>
-                @Html.LabelFor(model => model.Age_group, "Age_group", htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
                     @Html.DropDownList("Age_group", null, htmlAttributes: new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.Age_group, "", new { @class = "text-danger" })
@@ -51,7 +50,6 @@
                 <p>IELTS - Level - Proficient English - 7+ in all 4 components of IELTS</p>
                 <p>IELTS - Level - Superior English - 8+ in all 4 components of IELTS</p>
 
-                @Html.LabelFor(model => model.Language_proficiency, "Language_proficiency", htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
                     @Html.DropDownList("Language_proficiency", null, htmlAttributes: new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.Language_proficiency, "", new { @class = "text-danger" })
@@ -60,7 +58,6 @@
 
             <div class="form-group">
                 <p>Have you met the requirements for the award of degree, diploma, advanced diploma or trade qualifications which took atleast 2 years of full-time study in Australia ?</p>
-                @Html.LabelFor(model => model.Australian_study_requirement, "Australian_study_requirement", htmlAttributes: new { @class = "control-label col-md-2" })
                 <br />
                 <br />
                 <div class="col-md-10">
@@ -71,7 +68,6 @@
 
             <div class="form-group">
                 <p>What is your highest Qualification ?</p>
-                @Html.LabelFor(model => model.Qualification, "Qualification", htmlAttributes: new { @class = "control-label col-md-2" })
                 <br />
                 <br />
                 <div class="col-md-10">
@@ -81,8 +77,7 @@
             </div>
 
             <div class="form-group">
-                <p>Have you met the requirements for the award of an Australian Specialist educational qualification ?</p>
-                @Html.LabelFor(model => model.Doctrate_or_Master_by_research, "Doctrate_or_Master_by_research", htmlAttributes: new { @class = "control-label col-md-2" })
+                <p>Have you met the requirements for the award of an Australian Specialist educational qualification ? (Degree by research or Doctrate) </p>
                 <br />
                 <br />
                 <div class="col-md-10">
@@ -93,7 +88,6 @@
 
             <div class="form-group">
                 <p>How long have you worked in your nominated field or closely related skilled occupation overseas ?</p>
-                @Html.LabelFor(model => model.Overseas_work_experience, "Overseas_work_experience", htmlAttributes: new { @class = "control-label col-md-2" })
                 <br />
                 <br />
                 <div class="col-md-10">
@@ -104,7 +98,6 @@
 
             <div class="form-group">
                 <p>How long have you worked in your nominated field or closely related skilled occupation in Australia ?</p>
-                @Html.LabelFor(model => model.Australian_work_experience, "Australian_work_experience", htmlAttributes: new { @class = "control-label col-md-2" })
                 <br />
                 <br />
                 <div class="col-md-10">
@@ -115,7 +108,6 @@
 
             <div class="form-group">
                 <p>Does these apply to your partner ? Select one from the below list.(Leave default if not applicable) </p>
-                @Html.LabelFor(model => model.Partner_skills, "Partner_skills", htmlAttributes: new { @class = "control-label col-md-2" })
                 <br />
                 <br />
                 <div class="col-md-10">
@@ -126,7 +118,6 @@
 
             <div class="form-group">
                 <p>Are you accredited as a para-professional interpreter or translator (level 2) by the Nation Accredition Authority for Translators and Interpreters.</p>
-                @Html.LabelFor(model => model.Designated_language_skills, "Designated_language_skills", htmlAttributes: new { @class = "control-label col-md-2" })
                 <br />
                 <br />
                 <div class="col-md-10">
