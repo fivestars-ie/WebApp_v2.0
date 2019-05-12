@@ -41,9 +41,37 @@ namespace VicLyfe2._0.Controllers
             return View();
         }
         
-        public ActionResult InformationHub()
+        public ActionResult Ballarat()
         {
-            ViewBag.Message = "InformationHub.";
+            ViewBag.Message = "Ballarat.";
+
+            return View();
+        }
+
+        public ActionResult BAWBAW()
+        {
+            ViewBag.Message = "BAWBAW.";
+
+            return View();
+        }
+
+        public ActionResult Bendigo()
+        {
+            ViewBag.Message = "Bendigo.";
+
+            return View();
+        }
+
+        public ActionResult Geelong()
+        {
+            ViewBag.Message = "Geelong.";
+
+            return View();
+        }
+
+        public ActionResult MtBuller()
+        {
+            ViewBag.Message = "MtBuller.";
 
             return View();
         }
