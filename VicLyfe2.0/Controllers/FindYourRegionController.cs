@@ -10,10 +10,6 @@ namespace VicLyfe2._0.Controllers
     {
 
         // GET: FindYourRegion
-        public ActionResult FYR()
-        {
-            return View();
-        }
 
         public ActionResult A_View()
         {
