@@ -4,7 +4,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>@ViewBag.Suburb4</h2>
+<h2><b>@ViewBag.Suburb4 </b> </h2>
 
 <p class="btn btn-primary btn-lg" style="background-color: white; float: right">
     @Html.ActionLink("<< Back to Home", "Index", "Home")
@@ -42,7 +42,7 @@
     <div>
         <div id="map"></div>
         <div id="right-panel">
-            <h2>Results</h2>
+            <h4><b> List of Shopping Centres in @ViewBag.Suburb4</b></h4>
             <ul id="places"></ul>
             <button id="more">More results</button>
         </div>

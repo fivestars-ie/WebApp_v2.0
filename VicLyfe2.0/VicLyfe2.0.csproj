@@ -234,6 +234,7 @@
     <Content Include="Content\Explore part - Hume Region.png" />
     <Content Include="Content\Explore part - Loddon Mallee Region.png" />
     <Content Include="Content\Geelong.jpg" />
+    <Content Include="Content\home-page-new.jpg" />
     <Content Include="Content\home-page.jpg" />
     <Content Include="Content\Hospital.png" />
     <Content Include="Content\Hospitals_link.jpg" />
@@ -253,6 +254,8 @@
     <Content Include="Content\R6-new.png" />
     <Content Include="Content\R7-new.png" />
     <Content Include="Content\rendered-2.jpg" />
+    <Content Include="Content\Slide4.PNG" />
+    <Content Include="Content\Visa - Pathway for PR.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
