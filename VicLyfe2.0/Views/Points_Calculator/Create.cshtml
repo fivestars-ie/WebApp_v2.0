@@ -4,26 +4,31 @@
     ViewBag.Title = "Create";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h2> PR Points Calculator</h2>
+<body >
+<h3> <b>PR Points Calculator</b> </h3>
 <p class="btn btn-primary btn-lg" style="background-color: white; float: right">
     @Html.ActionLink("<< Back to Home", "Index", "Home")
 </p>
 <br> </br>
 
 
-<h3>Enter your Qualifications, Age, Work Experience and other characteristics to find out how much points you have scored.</h3>
+<h4><b> Enter your Qualifications, Age, Work Experience and other required information to find out how much PR points you have scored </b> </h4>
 <style>
     .form-horizontal {
         box-sizing: border-box;
+        width:100%;
     }
 
     .form-group {
-        width: 100%;
+        width: 90%;
         padding: 12px;
         border: 1px solid #ccc;
-        border-radius: 4px;
         resize: vertical;
-        background-color: lightblue;
+        background-color:lightgoldenrodyellow;
+        margin-left:35px;
+    }
+    p {
+        font-weight:bold;
     }
 </style>
 <html>
@@ -58,8 +63,7 @@
 
             <div class="form-group">
                 <p>Have you met the requirements for the award of degree, diploma, advanced diploma or trade qualifications which took atleast 2 years of full-time study in Australia ?</p>
-                <br />
-                <br />
+               
                 <div class="col-md-10">
                     @Html.DropDownList("Australian_study_requirement", null, htmlAttributes: new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.Australian_study_requirement, "", new { @class = "text-danger" })
@@ -68,8 +72,7 @@
 
             <div class="form-group">
                 <p>What is your highest Qualification ?</p>
-                <br />
-                <br />
+                
                 <div class="col-md-10">
                     @Html.DropDownList("Qualification", null, htmlAttributes: new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.Qualification, "", new { @class = "text-danger" })
@@ -78,8 +81,7 @@
 
             <div class="form-group">
                 <p>Have you met the requirements for the award of an Australian Specialist educational qualification ? (Degree by research or Doctrate) </p>
-                <br />
-                <br />
+                
                 <div class="col-md-10">
                     @Html.DropDownList("Doctrate_or_Master_by_research", null, htmlAttributes: new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.Doctrate_or_Master_by_research, "", new { @class = "text-danger" })
@@ -88,8 +90,7 @@
 
             <div class="form-group">
                 <p>How long have you worked in your nominated field or closely related skilled occupation overseas ?</p>
-                <br />
-                <br />
+                
                 <div class="col-md-10">
                     @Html.DropDownList("Overseas_work_experience", null, htmlAttributes: new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.Overseas_work_experience, "", new { @class = "text-danger" })
@@ -98,8 +99,7 @@
 
             <div class="form-group">
                 <p>How long have you worked in your nominated field or closely related skilled occupation in Australia ?</p>
-                <br />
-                <br />
+                
                 <div class="col-md-10">
                     @Html.DropDownList("Australian_work_experience", null, htmlAttributes: new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.Australian_work_experience, "", new { @class = "text-danger" })
@@ -108,8 +108,7 @@
 
             <div class="form-group">
                 <p>Does these apply to your partner ? Select one from the below list.(Leave default if not applicable) </p>
-                <br />
-                <br />
+                
                 <div class="col-md-10">
                     @Html.DropDownList("Partner_skills", null, htmlAttributes: new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.Partner_skills, "", new { @class = "text-danger" })
@@ -118,8 +117,7 @@
 
             <div class="form-group">
                 <p>Are you accredited as a para-professional interpreter or translator (level 2) by the Nation Accredition Authority for Translators and Interpreters.</p>
-                <br />
-                <br />
+                
                 <div class="col-md-10">
                     @Html.DropDownList("Designated_language_skills", null, htmlAttributes: new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.Designated_language_skills, "", new { @class = "text-danger" })
@@ -128,7 +126,7 @@
 
             <div class="form-group">
                 <div class="col-md-offset-2 col-md-10">
-                    <input type="submit" value="Calculate Points" class="btn btn-default" />
+                    <input type="submit" value="Calculate Points" class="btn btn-default" style="font-weight:bold;background-color:white;"/>
                 </div>
             </div>
         </div>
@@ -138,3 +136,4 @@
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
+    </body>

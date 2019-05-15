@@ -37,7 +37,7 @@ namespace VicLyfe2._0.Controllers
             suburb.means = 90;
             Session["Suburb4"] = suburb.city;
 
-            if (db.Suburbs.Count(m => (m.city).ToUpper() == (suburb.city).ToUpper() ) == 1 )
+            if (db.Suburbs.Count(m => (m.city).ToUpper() == (suburb.city).ToUpper()) == 1 )
             {
                 return RedirectToAction("Explore4");
             }

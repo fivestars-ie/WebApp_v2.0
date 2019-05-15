@@ -2976,7 +2976,6 @@ select[multiple].input-lg {
 }
 .form-horizontal .form-group {
   margin-right: -15px;
-  margin-left: -15px;
 }
 @media (min-width: 768px) {
   .form-horizontal .control-label {

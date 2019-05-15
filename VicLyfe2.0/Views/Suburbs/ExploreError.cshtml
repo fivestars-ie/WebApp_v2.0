@@ -4,37 +4,33 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+    <body>
+        <style type="text/css">
+            #content {
+                border: double;
+                border-color: skyblue;
+                border-radius: 10px;
+                margin: 0 auto;
+                width: 400px;
+                height: 200px;
+                border-width: 5px;
+                background: lightgrey;
+            }
+        </style>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="content">
+            <center>
+                <h2>Suburb not found! </h2>
+                <h4>The Suburb name you have entered is wrong. Please make sure you enter the correct name to explore the suburb.</h4>
+            </center>
+            <br>
+            <td>&emsp; &emsp;&emsp;</td>
+            <td><button class="w3-button w3-dark-grey">@Html.ActionLink("Enter Again", "Create", "Suburbs")</button></td>
+            <td>&emsp; &emsp;&emsp;&emsp;&emsp;</td>
+            <td><button class="w3-button w3-dark-grey">@Html.ActionLink("Go Back to Home", "Index", "Home")</button></td>
 
-
-
-<body>
-    <style type="text/css">
-        #content {
-            border: double;
-            border-color: skyblue;
-            border-radius: 10px;
-            margin: 0 auto;
-            width: 400px;
-            height: 200px;
-            border-width: 5px;
-            background: lightgrey;
-        }
-    </style>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div id="content">
-        <center>
-            <h2>Suburb not found! </h2>
-            <h4>The Suburb name you have entered is wrong. Please make sure you enter the correct name to explore the suburb.</h4>
-        </center>
-    <br>
-    <td>&emsp; &emsp;&emsp;</td>
-    <td><button class="w3-button w3-dark-grey">@Html.ActionLink("Enter Again", "Create", "Suburbs")</button></td>
-    <td>&emsp; &emsp;&emsp;&emsp;&emsp;</td>
-    <td><button class="w3-button w3-dark-grey">@Html.ActionLink("Go Back to Home", "Index", "Home")</button></td>
-
-</div>
-</body>
-
+        </div>
+    </body>

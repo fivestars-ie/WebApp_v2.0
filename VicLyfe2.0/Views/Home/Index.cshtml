@@ -3,152 +3,90 @@
     ViewBag.Title = "Home Page";
 }
 
+    <html>
+    <body style="background-color:silver">
 
-
-<!DOCTYPE html>
-<html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-    body, h1, h2, h3, h4, h5, h6 {
-        font-family: "Raleway", Arial, Helvetica, sans-serif;
-        font-weight: bold;
-    }
-
-    .myLink {
-        display: none
-    }
-
-    img {
-        filter: opacity(90%);
-    }
-</style>
-<body class="w3-light-grey" style="background-color:lavender;">
-
-    <!-- Header -->
-    <header class="w3-display-container w3-content w3-hide-small" style="max-width:1700px;">
-        <img class="w3-image" src="~/Content/home-page-new.jpg" alt="London" style="width:1700px;height:500px;">
-        <div class="w3-display-middle" style="width:65%;margin-top:300px;">
-            <div class="w3-bar w3-black">
-                <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Flight');" style="width:246px"><i class="fa fa-clock w3-margin-right"></i>Compare Facts</button>
-                <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Hotel');" style="width:246px"><i class="fa fa-Map w3-margin-right"></i>PR Points Calculator</button>
-                <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Car');" style="width:246px" ><i class="fa fa-Map w3-margin-right"></i>@Html.ActionLink("Explore a suburb", "Create", "Suburbs")</button>
-            </div>
-
-            <!-- Tabs -->
-            <div id="Flight" class="w3-container w3-white w3-padding-16 myLink">
-                <h3><b> Did you know ? </b> </h3>
-                <p><b>Regional Victoria has a better quality of life vs Melbourne.</b> </p>
-                <div class="w3-row-padding" style="margin:0 -16px;">
-                    <div class="w3-container">
-                    </div>
-                </div>
-                <p><button class="w3-button w3-dark-grey">@Html.ActionLink("Find out now", "Compare", "Home")</button></p>
-            </div>
-
-            <div id="Hotel" class="w3-container w3-white w3-padding-16 myLink">
-                <h3>
-                    <b>
-                        Find out how many points you have to apply for Australian PR before proceeding ?
-                    </b>
-                </h3>
-                <p><button class="w3-button w3-dark-grey">@Html.ActionLink("Calculate Points", "Create", "Points_Calculator")</button></p>
-            </div>
-
-            <div id="Car" class="w3-container w3-white w3-padding-16 myLink">
-                <h3><b> Find out what the suburb of your choice offers.</b></h3>
-                @using (Html.BeginForm())
-                {
-                    @Html.AntiForgeryToken()
-
-                    <div class="form-horizontal">
-                        <hr />
-                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-
-                        <div class="form-group">
-                            <div class="col-md-10">
-                                @Html.EditorFor(model => model.city, new { htmlAttributes = new { @class = "form-control" } })
-                                @Html.ValidationMessageFor(model => model.city, "", new { @class = "text-danger" })
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-offset-2 col-md-10">
-                                <input type="submit" value="Explore" class="btn btn-default" />
-                            </div>
-                        </div>
-                    </div>
-                }
-
-                @section Scripts {
-                    @Scripts.Render("~/bundles/jqueryval")
-                }
-            </div>
-        </div>
-    </header>
-
-    <!-- Page content -->
-    <div class="w3-content" style="max-width:1700px;margin-top:150px;">
-
-        <!-- Good offers -->
-        <div class="w3-container w3-margin-top">
-            <h2><b>VicLyfe, helping overseas students find a suburb to live in Regional Victoria</b></h2>
-            <h2><b>What we have for you ?</b></h2>
-        </div>
-
-        <!-- First Photo Grid-->
-        <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-            <div class="w3-quarter" style="border:double; border-color:skyblue; padding:10px">
-                <img src="~/Content/rendered-2.jpg" alt="Sandwich" style="width:100%;height:150px; padding:10px;">
-                <h4 style="padding-left:45px"><button class="w3-button" style="background-color:dodgerblue;color:white"><b>@Html.ActionLink("Our Vision", "About", "Home")</b></button><b style="font-size:25px">&emsp;-></b></h4>
-
-            </div>
-            <div class="w3-quarter" style="border:double; border-color:skyblue; padding:10px">
-                <img src="~/Content/1-1024x978.png" alt="Steak" style="width:100%;height:150px;padding:10px;">
-                <h4 style="padding-left:30px"><button class="w3-button" style="background-color:red;color:white"><b>@Html.ActionLink("Why Regional?", "Compare", "Home")</b></button><b style="font-size:25px">&nbsp;&nbsp;-></b></h4>
-            </div>
-            <div class="w3-quarter" style="border:double; border-color:skyblue; padding:10px">
-                <img src="~/Content/Visa - Pathway for PR.jpg" alt="Cherries" style="width:100%;height:150px;padding:10px;">
-                <h4 style="padding-left:30px"><button class="w3-button" style="background-color:dodgerblue;color:white"><b>@Html.ActionLink("Pathway for PR", "PRPath", "Home")</b></button><b style="font-size:25px">&nbsp;&nbsp;-></b></h4>
-            </div>
-            <div class="w3-quarter" style="border:double; border-color:skyblue; padding:10px">
-                <img src="~/Content/20151118_regionalvictoria.png" alt="Pasta and Wine" style="width:100%;height:150px;padding:10px;">
-                <h4><button class="w3-button" style="background-color:red;color:white"><b>@Html.ActionLink("Choose a Suburb", "Create", "Selected_region")</b></button><b style="font-size:25px">&nbsp;&nbsp;-></b></h4>
-            </div>
-        </div>
-        </div>
-
-
-        <div class="w3-container" style="max-width:1700px;height:500px;">
+        <div class="w3-container" style="max-height:100%;width:100%;">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
             <style>
                 .mySlides {
                     display: none;
                 }
+
+                .myLink {
+                    display: none
+                }
             </style>
 
             <div class="w3-content w3-display-container">
-                <img class="mySlides" src="~/Content/Explore part - Barwon South Western Region.png" style="width:100%;height:500px;">
-                <img class="mySlides" src="~/Content/Explore part - Gippsland.png" style="width:100%;height:500px;">
-                <img class="mySlides" src="~/Content/Explore part - Grampians.png" style="width:100%;height:500px;">
-                <img class="mySlides" src="~/Content/Explore part - Hume Region.png" style="width:100%;height:500px;">
-                <img class="mySlides" src="~/Content/Explore part - Loddon Mallee Region.png" style="width:100%;height:500px;">
+                <img class="mySlides" src="~/Content/Homepage-Slides1.jpg" style="width:100%;height:100%;object-fit:fill">
+                <img class="mySlides" src="~/Content/Homepage-slides 2.png" style="width:100%;height:100%;object-fit:fill">
+                <img class="mySlides" src="~/Content/Homepage - Slide 3.jpg" style="width:100%;height:100%;object-fit:fill">
+                <img class="mySlides" src="~/Content/Homepage - Slide 4.jpg" style="width:100%;height:100%;object-fit:fill">
 
                 <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
                 <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
             </div>
-            <div class="w3-bar" style="margin-bottom:-125px;">
-                <button class="w3-button w3-dark-grey" align="center"
-                        style="margin-left: 600px;margin-top: -60px;position: absolute;">
-                    @Html.ActionLink("Compare the different regions", "Compare", "Home")
-                </button>
+
+            <br />
+            <br />
+
+            <div class="w3-container" style="width:auto;max-width:70%;margin-top:-4%;margin-left:15%;">
+                <div class="w3-bar w3-black">
+                    <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Flight');" style="width:auto;"><i class="fa fa-clock w3-margin-right"></i>Compare Facts</button>
+                    <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Hotel');" style="width:auto;"><i class="fa fa-Map w3-margin-right"></i>PR Points Calculator</button>
+                    <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Car');" style="width:auto;"><i class="fa fa-Map w3-margin-right"></i>@Html.ActionLink("Explore a suburb", "Create", "Suburbs")</button>
+                </div>
+
+                <!-- Tabs -->
+                <div id="Flight" class="w3-container w3-white w3-padding-16 myLink" style="border:solid;">
+                    <h3><b> Did you know ? </b> </h3>
+                    <p><b>Regional Victoria has a better quality of life vs Melbourne.</b> </p>
+                    <div class="w3-row-padding" style="margin:0 -16px;">
+                        <div class="w3-container">
+                        </div>
+                    </div>
+                    <p><button class="w3-button w3-dark-grey">@Html.ActionLink("Find out now", "Compare", "Home")</button></p>
+                </div>
+
+                <div id="Hotel" class="w3-container w3-white w3-padding-16 myLink" style="border:solid;">
+                    <h3>
+                        <b>
+                            Find out how many points you have to apply for Australian PR before proceeding ?
+                        </b>
+                    </h3>
+                    <p><button class="w3-button w3-dark-grey">@Html.ActionLink("Calculate Points", "Create", "Points_Calculator")</button></p>
+                </div>
+
+                <div id="Car" class="w3-container w3-white w3-padding-16 myLink" style="border:solid;">
+                    <h3><b> Find out what the suburb of your choice offers.</b></h3>
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-horizontal">
+
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div class="form-group">
+                                <div class="col-md-10">
+                                    @Html.EditorFor(model => model.city, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.city, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Explore" class="w3-button w3-dark-grey" />
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                    @section Scripts {
+                        @Scripts.Render("~/bundles/jqueryval")
+                    }
+                </div>
             </div>
-            <br />
-            <br />
-            <br />
             <script>
                 var slideIndex = 1;
                 showDivs(slideIndex);
@@ -167,40 +105,70 @@
                     }
                     x[slideIndex - 1].style.display = "block";
                 }
+
+                function openLink(evt, linkName) {
+                    var i, x, tablinks;
+                    x = document.getElementsByClassName("myLink");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablink");
+                    for (i = 0; i < x.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+                    }
+                    document.getElementById(linkName).style.display = "block";
+                    evt.currentTarget.className += " w3-red";
+                }
+
+                // Click on the first tablink on load
+                document.getElementsByClassName("tablink")[0].click();
+
             </script>
         </div>
 
-        <!-- Footer -->
-        <footer class="w3-center w3-black w3-padding-64" style="max-width:1700px;">
-            <div>
-                <p align="center" background-color="grey">@Html.ActionLink("Go Back to the Top", "Index", "Home")</p>
-            </div>
-            <div class="w3-xlarge w3-section">
+        <!-- Project Section -->
+        <div class="w3-container w3-padding-32" id="projects" style="margin-top:auto">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><b> Our Services </b></h3>
+            <h6><b> Click on the button to know more information about each service</b></h6>
+        </div>
 
+        <div class="w3-row-padding" style="border:solid;">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">@Html.ActionLink("About Us", "About", "Home")</div>
+                    <img src="~/Content/Homepage - Our version.jpg" alt="House" style="width:100%">
+                </div>
             </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">@Html.ActionLink("Choose a Suburb", "Create", "Selected_region")</div>
+                    <img src="~/Content/Homepage-Choose a suburb .jpg" alt="House" style="width:100%">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">@Html.ActionLink("Comparison", "Compare", "Home")</div>
+                    <img src="~/Content/Honepage - Why Regional.jpg" alt="House" style="width:100%">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">@Html.ActionLink("Visa Streams", "PRPath", "Home")</div>
+                    <img src="~/Content/Visa - Pathway for PR.jpg" alt="House" style="width:100%">
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="w3-center w3-black w3-padding-64" style="margin-top:15px;">
+
+            <p background-color="grey" align="center">@Html.ActionLink("Go Back to Top", "Index", "Home")</p>
+
+           
         </footer>
-
-        <script>
-            // Tabs
-            function openLink(evt, linkName) {
-                var i, x, tablinks;
-                x = document.getElementsByClassName("myLink");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tablink");
-                for (i = 0; i < x.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
-                }
-                document.getElementById(linkName).style.display = "block";
-                evt.currentTarget.className += " w3-red";
-            }
-
-            // Click on the first tablink on load
-    document.getElementsByClassName("tablink")[0].click();
-        </script>
-
-</body>
+    </body>
 </html>
+
+
 
 
