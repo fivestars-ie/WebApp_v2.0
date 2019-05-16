@@ -4,32 +4,30 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h1>Result</h1>
-<br>
+<body style="background-color:silver;">
 <h4>
-        Based on the preferences we have suggested 3 suburbs. We have kept all your preferences into consideration
-        while choosing the suburbs
+    <b>Congratulations! we have 3 suburbs suiting your preferences. They are listed below alonh with 
+       an option to compare them</b>
 </h4>
 <br>
-<body>
     <style>
         ul.a {
             list-style-position: outside;
         }
     </style>
     <ul class="a">
-        <li><h4>@ViewBag.Suburb1</h4></li>
+        <li><h4><b>@ViewBag.Suburb1 </b> </h4></li>
         <button onclick="{location.href='Explor1'}" class="btn btn-primary btn-lg" style="float: right">
             <font size=4px>Explore this suburb</font>
         </button>
         <br> </br>
 
-        <li><h4>@ViewBag.Suburb2</h4></li>
+        <li><h4><b> @ViewBag.Suburb2 </b> </h4></li>
         <button onclick="{location.href='Explor2'}" class="btn btn-primary btn-lg" style="float: right">
             <font size=4px>Explore this suburb</font>
         </button>
         <br> </br>
-        <li><h4>@ViewBag.Suburb3</h4></li>
+        <li><h4><b> @ViewBag.Suburb3 </b> </h4></li>
         <button onclick="{location.href='Explor3'}" class="btn btn-primary btn-lg" style="float: right">
             <font size=4px>Explore this suburb</font>
         </button>
@@ -39,7 +37,7 @@
     <br />
 
     <button onclick="{location.href='Report'}" class="btn btn-primary btn-lg">
-        <font size=4px>Click to compare the above 3 Suburbs</font>
+        <font size=4px>Click to see which suits you the most</font>
     </button>
 
     <button onclick="{location.href='Create'}" class="btn btn-primary btn-lg" style="float: right">

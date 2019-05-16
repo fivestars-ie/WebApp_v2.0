@@ -3,117 +3,92 @@
     ViewBag.Title = "Above80";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-    <div class=" col-md-12" style="border:solid;">
-        <h3 style="color:red;">Total Points you have got is :</h3>
-        <h3 style="color:red;">@ViewBag.points</h3>
-    </div>
-        <!-- About/Information menu -->
+    <body style="background-color:silver;">
+        <div class=" col-md-12" style="border:solid;">
+            <h3 style="color:red;"><b>Total Points you have got is :</b></h3>
+            <h3 style="color:red;"><b>@ViewBag.points</b></h3>
+        </div>
+
         <div class="w3-col col-md-12" style="border:solid;">
             <!-- About Card -->
             <div class="w3-white w3-margin">
-                <img src="~/Content/PR-points.png" alt="Jane" class="w3-grayscale">
-                <div class="w3-container w3-black">
+                <img src="~/Content/PR-points.jpg" alt="Jane" class="w3-grayscale" style="width:100%;">
+                <div class="w3-container">
                     <h4><b>In 2019,</b></h4>
                     <p>
-                        <b>
-                            Even though you have more than 75-80 points it is definitely not enough as the number of applicants are increasing
-                            day by day. See the target as planned by Government of Australia.
-                        </b>
+                        Congratulations on having more than 80 points, But with the increasing applications every year
+                        the cut-off points have also increased very quickly thereby increasing processing times to upto 
+                        6 months even though you have more points than the cut-off.
+                       
                     </p>
-                    <img src="~/Content/canada-immigartion-new-plan-2019.png" alt="Jane" class="w3-grayscale">
-                    <h3>
-                        <b>
-                            So the solution you have is to go to Regional Victoria which offers a great quality of life as well as supports
-                            your immigrations needs and requirements.
-                        </b>
-                    </h3>
                 </div>
             </div>
         </div>
-        <style>
+        <br />
+        <br />
+        <h4 style="color:red; margin-top:10px;">
+            <b>
+                Regional Victoria is the perfect choice. Below are the visa policies applicable
+            </b>
+        </h4>
 
-            .headVisa {
-                margin-top: 50px;
-                text-transform: uppercase;
-                font-size: 20px;
-                font-weight: bold;
-            }
-
-            .infoHead {
-                text-transform: uppercase;
-                font-size: 15px;
-                font-weight: bold;
-                margin-bottom: 15px;
-            }
-
-            .grid-container {
-                display: grid;
-                grid-template-columns: auto auto;
-                grid-gap: 10px;
-                padding: 10px;
-                text-align: left;
-            }
-
-                .grid-container > div {
-                    font-size: 15px;
+        <div class="w3-container" style="max-height:100%;width:100%;">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <style>
+                .mySlides {
+                    display: none;
                 }
 
-            .grid-left {
-                text-transform: uppercase;
-                background-color: lightgrey;
-                padding: 5px 5px;
-                padding-left: 10px;
-            }
+                .myLink {
+                    display: none
+                }
+            </style>
 
-            .grid-right {
-                padding: 5px 5px;
-                padding-left: 10px;
-                border: 1px solid lightgrey;
-            }
+            <div class="w3-content w3-display-container">
+                <img class="mySlides" src="~/Content/regional visa 2.png" style="width:100%;height:70%;object-fit:fill">
+                <img class="mySlides" src="~/Content/regional visa 3.png" style="width:100%;height:70%;object-fit:fill">
+                <img class="mySlides" src="~/Content/regional visa 4.png" style="width:100%;height:70%;object-fit:fill">
 
-            .two-column {
-                display: grid;
-                grid-template-columns: auto auto;
-            }
-        </style>
-
-        
-
-        <h2>&ensp;</h2>
-        <h3><b>Permanent Visa Path</b></h3>
-        <div style="font-size:15px;">
-            There are ways to get have a Permanent Visa in Australia.
-            The most mainstream path among them are :
-        </div>
-        <ul style="list-style-type: circle;">
-            <li>Family-stream permanent visa</li>
-            <li>Work-stream permanent visa</li>
-            <li>Investor-stream permanent visa</li>
-        </ul>
-
-
-        <div style="font-style:italic;font-weight:bolder">
-            As advocated by the government, the permanent visa seekers are pushed to live and take the regional path. This is due to population booming in the metropolitan area such as Melbourne.
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            </div>
         </div>
 
+        <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = x.length }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                }
+        </script>
 
 
-        <div class="headVisa"> The Skilled Regional (Provisional) visa (subclass 489) </div>
-        <div class="infoHead">skilled workers to live and work in specified regional areas in Australia for up to four years</div>
-        <div>
-            <p>The Victorian Government offers visa nomination under the Skilled Regional (Provisional) visa (subclass 489) for highly skilled and eligible professionals and tradespeople who want to live and work in regional Victoria.</p>
-            <br/>
-            <div class="col-md-12" style=" border:solid;">
-                
-                <div class="col-md-4" align="left"><b>Immigration Site Link </b> </div>
-                <div class="grid-right">
-                    <a href="https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/skilled-regional-provisional-visa-subclass-489"
-                       target="_blank">
-                        <b>
-                            Skilled Regional (Provisional) visa (subclass 489)
-                        </b>
-                    </a>
-                </div>
-
+        <div class="col-md-12" style=" border:solid;margin-top:5%;">
+            <div class="col-md-4" align="left"><b>Immigration Site Link</b> </div>
+            <div class="grid-right">
+                <a href="https://liveinmelbourne.vic.gov.au/migrate/skilled-migration-visas/skilled-regional-provisional-visa-subclass-489"
+                   target="_blank">
+                    <b>
+                        Skilled Regional (Provisional) visa (subclass 489) (Click for more information)
+                    </b>
+                </a>
             </div>
-            </div>
+
+
+
+        </div>
+
+    </body>
