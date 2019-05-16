@@ -10,7 +10,7 @@
 <hr>
 
 <html>
-<body>
+<body style="background-color:silver">
 
     <h4><b>Click on the button below to see what the Suburb offers to you !</b></h4>
     <button onclick="{location.href='Explor11'}" class="btn btn-primary btn-lg" style="width: 220px">
@@ -34,7 +34,7 @@
     </button>
     <hr>
     <br>  </br>
-    <div style="border:solid;background-color:white">
+    <div style="border:solid;background-color:white;margin: 5px;">
 
         <div id="map"></div>
         <h4><b> List of City Halls</b></h4>
@@ -45,13 +45,14 @@
         </div>
         <!-- Replace the value of the key parameter with your own API key. -->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDup5_Payp5tju9PxCkWaBZnErOU7raAg8&libraries=places&callback=initMap" async defer></script>
-        <style type="text/css">
+        <style type="text/css" >
             /* Always set the map height explicitly to define the size of the div
                     * element that contains the map. */
             #map {
                 float: left;
                 height: 400px;
-                width: 800px;
+                Width: 60%;
+                margin: 20px;
             }
 
             #more {
