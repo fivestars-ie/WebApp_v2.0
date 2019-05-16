@@ -12,7 +12,7 @@
 <hr>
 
 <html>
-<body>
+<body style="background-color:silver">
 
     <h4><b>Click on the button below to see what the Suburb offers to you !</b></h4>
 
@@ -37,7 +37,7 @@
     </button>
     <hr>
     <br>  </br>
-    <div>
+    <div style="border:solid;background-color:white">
 
         <div id="map"></div>
         <h4><b> List of City Halls in @ViewBag.SuburbC</b></h4>
@@ -52,9 +52,10 @@
             /* Always set the map height explicitly to define the size of the div
                     * element that contains the map. */
             #map {
-                margin: 0 auto;
+                float: left;
                 height: 400px;
-                width: 900px;
+                Width: 60%;
+                margin: 20px;
             }
 
             #more {
