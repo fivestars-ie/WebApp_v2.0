@@ -5,15 +5,20 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <body>
-   
+    <td>@Html.ActionLink("Home", "Index", "Home")  </td>
+    <td> >> </td>
+    <td>@Html.ActionLink("Choose a suburb", "Create", "Selected_region")  </td>
+    <td> >> </td>
+    <u style="display:inline;">Preferences</u>
+
     <h3> <b>Step2: Select / Enter your Preferences</b></h3>
-    <br/>
+    <br />
     <h4> <b>Select / Enter your Affordable Rent, rate the characteristics based on your requirements </b> </h4>
 
     <style>
         .form-horizontal {
             box-sizing: border-box;
-                    width:80%;
+            width: 80%;
         }
 
         .form-group {
@@ -22,10 +27,11 @@
             border: 1px solid #ccc;
             resize: vertical;
             background-color: lightgoldenrodyellow;
-            margin-left:35px;
+            margin-left: 35px;
         }
+
         p {
-            font-weight:bold;
+            font-weight: bold;
         }
     </style>
 
@@ -48,7 +54,7 @@
 
             <div class="form-group">
                 <p>How many bedrooms do you need ?</p>
-                
+
                 <div class="col-md-10">
                     @Html.DropDownList("Number_of_bedrooms", null, htmlAttributes: new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.Number_of_bedrooms, "", new { @class = "text-danger" })
@@ -57,7 +63,7 @@
 
             <div class="form-group">
                 <p> Still in the Hunt for jobs? Rate your job requirement so that we can provide a suburb with higher job oppurtunity.</p>
-                
+
                 <div class="col-md-10">
                     @Html.DropDownList("Job_Requirement", null, htmlAttributes: new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.Job_Requirement, "", new { @class = "text-danger" })
@@ -66,7 +72,7 @@
 
             <div class="form-group">
                 <p> Select the Job Field if your in search of a job so that we can suggest suburbs with more number of jobs.</p>
-                
+
                 <div class="col-md-10">
                     @Html.DropDownList("Job_field_1", null, htmlAttributes: new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.Job_field_1, "", new { @class = "text-danger" })
@@ -84,7 +90,7 @@
 
             <div class="form-group">
                 <p> Need Health services often? Rate your requirement to get a suburb with more number of hospitals.</p>
-                
+
                 <div class="col-md-10">
                     @Html.DropDownList("Hospital_Service_Requirement", null, htmlAttributes: new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.Hospital_Service_Requirement, "", new { @class = "text-danger" })
@@ -93,7 +99,7 @@
 
             <div class="form-group">
                 <p> Need a suburb with more greenery and free from buildings and pollution ? Rate your requirement to get a suburb with more number of parks and reserves.</p>
-                
+
                 <div class="col-md-10">
                     @Html.DropDownList("Do_you_prefer_Parks_and_Reserves", null, htmlAttributes: new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.Do_you_prefer_Parks_and_Reserves, "", new { @class = "text-danger" })
@@ -102,7 +108,7 @@
 
             <div class="form-group">
                 <p> Rate your requirement to get a suburb with more number of institutions providing Certification Courses.</p>
-                
+
                 <div class="col-md-10">
                     @Html.DropDownList("Educational_Institutes_Requirement", null, htmlAttributes: new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.Educational_Institutes_Requirement, "", new { @class = "text-danger" })
@@ -110,10 +116,10 @@
             </div>
 
             <div class="form-group">
-                    <div class="col-md-offset-2 col-md-10">
-                        <input type="submit" value="Show Suburbs" class="btn btn-default" style="font-weight:bold;" />
-                    </div>
-</div>
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Show Suburbs" class="btn btn-default" style="font-weight:bold;" />
+                </div>
+            </div>
         </div>
     }
 

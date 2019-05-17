@@ -3,35 +3,40 @@
     ViewBag.Title = "Compare";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-    <body style=" background-color:silver;">
-        <h2><b> Why is Regional Victoria better than Melbourne?</b></h2>
-        <p class="btn btn-primary btn-lg" style="background-color: white; float: right;color:black">
-            @Html.ActionLink("<< Back to Home", "Index", "Home")
-        </p>
-        <h4 style="margin-top:20px;"><b> One Stop solution to all your questions about how Regional Victoria performs in comparison to Melbourne.</b></h4>
+<body style=" background-color:silver;">
+    <td>@Html.ActionLink("Home", "Index", "Home")  </td>
+    <td > >> </td>
+    <u style="display:inline;"> Comparison</u>
+
+    <h2><b> Why is Regional Victoria better than Melbourne?</b></h2>
+    <p class="btn btn-primary btn-lg" style="background-color: white; float: right;color:black">
+        @Html.ActionLink("<< Back to Home", "Index", "Home")
+    </p>
+    <h4 style="margin-top:20px;"><b> One Stop solution to all your questions about how Regional Victoria performs in comparison to Melbourne.</b></h4>
 
 
 
-        <div class="w3-container">
+    <div class="w3-container">
 
-            <div class='tableauPlaceholder' id='viz1557665117194' style='position: relative;border:solid;'><noscript><a href='#'><img alt='Dashboard 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;fi&#47;final_15574058040120&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;final_15574058040120&#47;Dashboard2?:embed=y&amp;:display_count=y' /> <param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;fi&#47;final_15574058040120&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>
-            <script type='text/javascript'>var divElement = document.getElementById('viz1557665117194'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '850px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+        <div class='tableauPlaceholder' id='viz1557665117194' style='position: relative;border:solid;'><noscript><a href='#'><img alt='Dashboard 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;fi&#47;final_15574058040120&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;final_15574058040120&#47;Dashboard2?:embed=y&amp;:display_count=y' /> <param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;fi&#47;final_15574058040120&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>
+        <script type='text/javascript'>var divElement = document.getElementById('viz1557665117194'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '850px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
 
-            <br>
+        <br>
 
-            <p style="font-size: 20px"><b>
+        <p style="font-size: 20px">
+            <b>
                 Hope you have had a good understanding of how and why Regional Victoria is better?
-                </b>
-            </p>
-            <p style="font-size: 20px">
-                <b>
-                Further more, find a suitable suburb to live in. Proceed by selecting a region first, Click on the link below
-                </b> 
-            </p>
-            <b style="color: blue; font-size: 20px">
-                @Html.ActionLink(" >> Choose a Suburb", "Create", "Selected_region")
             </b>
+        </p>
+        <p style="font-size: 20px">
+            <b>
+                Further more, find a suitable suburb to live in. Proceed by selecting a region first, Click on the link below
+            </b>
+        </p>
+        <b style="color: blue; font-size: 20px">
+            @Html.ActionLink(" >> Choose a Suburb", "Create", "Selected_region")
+        </b>
 
-        </div>
+    </div>
 
-    </body> 
+</body> 

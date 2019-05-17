@@ -4,6 +4,16 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<td>@Html.ActionLink("Home", "Index", "Home")  </td>
+<td> >> </td>
+<td>@Html.ActionLink("Choose a suburb", "Create", "Selected_region")  </td>
+<td> >> </td>
+<td>@Html.ActionLink("Preferences", "Create", "User_preference")  </td>
+<td> >> </td>
+<td>@Html.ActionLink("Result", "Index", "User_preference")  </td>
+<td> >> </td>
+<u style="display:inline;">Explore @ViewBag.SuburbC</u>
+
 <h2><b>@ViewBag.SuburbC</b> </h2>
 
 <p><a href="Index" class="btn btn-primary btn-lg" style="float: right">Return to result &laquo;</a></p>

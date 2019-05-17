@@ -5,11 +5,21 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <body style="background-color:silver;">
-<h4>
-    <b>Congratulations! we have 3 suburbs suiting your preferences. They are listed below alonh with 
-       an option to compare them</b>
-</h4>
-<br>
+    <td>@Html.ActionLink("Home", "Index", "Home")  </td>
+    <td> >> </td>
+    <td>@Html.ActionLink("Choose a suburb", "Create", "Selected_region")  </td>
+    <td> >> </td>
+    <td>@Html.ActionLink("Preferences", "Create", "User_preference")  </td>
+    <td> >> </td>
+    <u style="display:inline;">Result</u>
+
+    <h4>
+        <b>
+            Congratulations! we have 3 suburbs suiting your preferences. They are listed below alonh with
+            an option to compare them
+        </b>
+    </h4>
+    <br>
     <style>
         ul.a {
             list-style-position: outside;
@@ -36,12 +46,51 @@
     </ul>
     <br />
 
-    <button onclick="{location.href='Report'}" class="btn btn-primary btn-lg">
-        <font size=4px>Click to see which suits you the most</font>
-    </button>
 
     <button onclick="{location.href='Create'}" class="btn btn-primary btn-lg" style="float: right">
         <font size=4px>Return</font>
     </button>
+    <br>
+    <br>
+   <hr>
+
+
+    <div class='tableauPlaceholder' id='viz1557659861215'
+         style='position: relative;border:solid;'>
+        <noscript>
+            <a href='#'>
+                <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;
+             images&#47;SS&#47;SSF8YWT5Y&#47;1_rss.png' style='border: none' />
+            </a>
+        </noscript><object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='path' value='views&#47;lgasummaries&#47;Dashboard2?:embed=y' />
+            <param name='toolbar' value='no' />
+            <param name='static_image'
+                   value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;SS&#47;SSF8YWT5Y&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='filter' value='Suburb_name=@ViewBag.Suburb1,@ViewBag.Suburb2,@ViewBag.Suburb3' />
+        </object>
+    </div>
+
+    <script type='text/javascript'>
+    var divElement = document.getElementById('viz1557659861215');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        if (divElement.offsetWidth > 800) {
+            vizElement.style.width = '100%';
+            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+        } else if (divElement.offsetWidth > 500) {
+            vizElement.style.width = '100%';
+            vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+        } else { vizElement.style.width = '100%'; vizElement.style.height = '1550px'; }
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
 
 </body>
+

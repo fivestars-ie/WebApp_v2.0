@@ -5,37 +5,44 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<td>@Html.ActionLink("Home", "Index", "Home")  </td>
+<td> >> </td>
+<td>@Html.ActionLink("Choose a suburb", "Create", "Selected_region")  </td>
+<td> >> </td>
+<u style="display:inline;">Confirm</u>
+
+
 <body style="background-color:silver;">
-<style type="text/css">
-    #content {
-        border: double;
-        border-radius: 10px;
-        margin: 0 auto;
-        width: 400px;
-        height: 200px;
-        border-width: 5px;
-        background: black;
-        color:white;
-    }
-</style>
-<br>
-<br>
-<br>
-<br>
-<div id="content">
-    <center>
-        <h3>You have Selected :</h3>
+    <style type="text/css">
+        #content {
+            border: double;
+            border-radius: 10px;
+            margin: 0 auto;
+            width: 400px;
+            height: 200px;
+            border-width: 5px;
+            background: white;
+            color: black;
+        }
+    </style>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="content">
+        <center>
+            <h3>You have Selected :</h3>
 
-        <h4><b>@ViewBag.region</b></h4>
+            <h4><b>@ViewBag.region</b></h4>
         </center>
-            <br>
-            <br>
+        <br>
+        <br>
 
-            <td>&emsp; &emsp;&emsp;&emsp;</td>
-            <p class="btn btn-primary btn-lg" style="background-color: white">@Html.ActionLink("Confirm", "Create", "User_preference")</p>
-            <td>&emsp; &emsp;&emsp;</td>
-            <p class="btn btn-primary btn-lg" style="background-color: white">@Html.ActionLink("Go back", "Create", "Selected_region")</p>
+        <td>&emsp; &emsp;&emsp;&emsp;</td>
+        <p class="btn btn-primary btn-lg" style="background-color: white">@Html.ActionLink("Confirm", "Create", "User_preference")</p>
+        <td>&emsp; &emsp;&emsp;</td>
+        <p class="btn btn-primary btn-lg" style="background-color: white">@Html.ActionLink("Go back", "Create", "Selected_region")</p>
 
-</div>
-    </body>
+    </div>
+</body>
 
