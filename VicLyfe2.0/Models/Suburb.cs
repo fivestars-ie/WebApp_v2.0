@@ -11,7 +11,6 @@ namespace VicLyfe2._0.Models
     {
         [Key]
         [StringLength(20)]
-        [RegularExpression(@"^[a-zA-Z]+$",ErrorMessage = "Only letters are allowed")]
         public string city { get; set; }
 
         [Required]
