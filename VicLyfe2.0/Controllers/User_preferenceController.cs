@@ -244,9 +244,9 @@ namespace VicLyfe2._0.Controllers
                 }
 
                 List<String> suburbs = aggregates.Select(s => s.Suburb_name).Distinct().Take(3).ToList();
-                Session["Suburb1"] = suburbs[0].ToUpper();
-                Session["Suburb2"] = suburbs[1].ToUpper();
-                Session["Suburb3"] = suburbs[2].ToUpper();
+                Session["Suburb1"] = suburbs[0];
+                Session["Suburb2"] = suburbs[1];
+                Session["Suburb3"] = suburbs[2];
                 Session["Job1"] = user_preference.Job_field_1;
                 Session["Job2"] = user_preference.Job_field_2;
                 return RedirectToAction("Index");
