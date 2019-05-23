@@ -192,17 +192,9 @@
     <Compile Include="Models\Selected_region.cs" />
     <Compile Include="Models\Suburb.cs" />
     <Compile Include="Models\test.cs" />
-    <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Models\Unit_type.cs" />
     <Compile Include="Models\User_preference.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\1-1024x978.png" />
@@ -256,9 +248,6 @@
     <Content Include="Content\imagesY9DPTHX2.jpg" />
     <Content Include="Content\Jobs-link.jpg" />
     <Content Include="Content\map-of-victoria-australia-s-guide-and-gippsland.jpg" />
-    <Content Include="Content\Points result page above80.png" />
-    <Content Include="Content\Points result page below80.png" />
-    <Content Include="Content\PR results Less is More.jpg" />
     <Content Include="Content\PR-points.jpg" />
     <Content Include="Content\PR-points.png" />
     <Content Include="Content\PR.jpg" />
@@ -286,7 +275,6 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="WebForm1.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -312,7 +300,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Aggregates\Index.cshtml" />
     <Content Include="Views\Points_Calculator\Create.cshtml" />
     <Content Include="Views\Points_Calculator\Above80.cshtml" />
