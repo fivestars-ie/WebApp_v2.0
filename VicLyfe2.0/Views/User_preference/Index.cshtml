@@ -26,11 +26,14 @@
         }
     </style>
     <ul class="a">
+
+        <!--
+
         <li><h4><b>@ViewBag.Suburb1 </b> </h4></li>
-        <button onclick="{location.href='Explor1'}" class="btn btn-primary btn-lg" style="float: right">
-            <font size=4px>Explore this suburb</font>
-        </button>
-        <br> </br>
+    <button onclick="{location.href='Explor1'}" class="btn btn-primary btn-lg" style="float: right">
+        <font size=4px>Explore this suburb</font>
+    </button>
+    <br> </br>
 
         <li><h4><b> @ViewBag.Suburb2 </b> </h4></li>
         <button onclick="{location.href='Explor2'}" class="btn btn-primary btn-lg" style="float: right">
@@ -42,6 +45,23 @@
             <font size=4px>Explore this suburb</font>
         </button>
         <br> </br>
+        -->
+
+        <li><h4><b>@ViewBag.Suburb1 </b> </h4></li>
+        <p style="float: right">@Html.ActionLink("Explore this suburb", "Explor1", "User_preference", new { },
+    new { @class = "btn btn-primary btn-lg" }) </p>
+        <br> </br>
+
+        <li><h4><b>@ViewBag.Suburb2 </b> </h4></li>
+        <p style="float: right">@Html.ActionLink("Explore this suburb", "Explor1", "User_preference", new { },
+          new { @class = "btn btn-primary btn-lg" }) </p>
+        <br> </br>
+
+        <li><h4><b>@ViewBag.Suburb3 </b> </h4></li>
+        <p style="float: right">@Html.ActionLink("Explore this suburb", "Explor1", "User_preference", new { },
+          new { @class = "btn btn-primary btn-lg" }) </p>
+        <br> </br>
+
 
     </ul>
     <br />
