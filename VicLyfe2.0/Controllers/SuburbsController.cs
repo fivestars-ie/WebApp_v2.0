@@ -35,7 +35,7 @@ namespace VicLyfe2._0.Controllers
             suburb.Region = "Region";
             suburb.area = 3555;
             suburb.means = 90;
-            Session["Suburb4"] = suburb.city;
+            Session["Suburb4"] = suburb.city.ToUpper();
 
             if (db.Suburbs.Count(m => (m.city).ToUpper() == (suburb.city).ToUpper()) == 1 )
             {
