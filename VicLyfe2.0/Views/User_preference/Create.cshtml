@@ -45,7 +45,7 @@
 
 
             <div class="form-group">
-                <p>The average weekly Rent per person for 1bhk unit is around 125AUD. Enter the Rent accoridng to requirement and convinience.</p>
+                <p>The average weekly Rent per person for 1 bed-room unit is around 125AUD. Enter the Rent accoridng to requirement and convinience.</p>
                 <div class="col-md-10">
                     @Html.EditorFor(model => model.Expected_Weekly_Rent, new { htmlAttributes = new { @class = "form-control" } })
                     @Html.ValidationMessageFor(model => model.Expected_Weekly_Rent, "", new { @class = "text-danger" })
@@ -53,7 +53,7 @@
             </div>
 
             <div class="form-group">
-                <p>How many bedrooms do you need ?</p>
+                <p>How many bedrooms do you need?</p>
 
                 <div class="col-md-10">
                     @Html.DropDownList("Number_of_bedrooms", null, htmlAttributes: new { @class = "form-control" })
@@ -71,7 +71,7 @@
             </div>
 
             <div class="form-group">
-                <p> Select the Job Field if your in search of a job so that we can suggest suburbs with more number of jobs.</p>
+                <p> Select which of the below Job Categories are more suitable for you </p>
 
                 <div class="col-md-10">
                     @Html.DropDownList("Job_field_1", null, htmlAttributes: new { @class = "form-control" })
@@ -80,7 +80,7 @@
             </div>
 
             <div class="form-group">
-                <p> Select a second most suitable Job Field.</p>
+                <p> Select a second most suitable Job Category</p>
 
                 <div class="col-md-10">
                     @Html.DropDownList("Job_field_2", null, htmlAttributes: new { @class = "form-control" })
@@ -107,7 +107,7 @@
             </div>
 
             <div class="form-group">
-                <p> Rate your requirement to get a suburb with more number of institutions providing Certification Courses.</p>
+                <p> Rate your requirement to get a suburb with more number of institutions / colleges providing Certification Courses.</p>
 
                 <div class="col-md-10">
                     @Html.DropDownList("Educational_Institutes_Requirement", null, htmlAttributes: new { @class = "form-control" })
